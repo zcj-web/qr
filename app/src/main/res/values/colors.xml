@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Day theme colors -->
+    <color name="day_primary">#6366F1</color>
+    <color name="day_primary_variant">#4F46E5</color>
+    <color name="day_surface">#FFFFFF</color>
+    <color name="day_surface_variant">#F8FAFC</color>
+    <color name="day_on_surface">#0F172A</color>
+    <color name="day_on_surface_variant">#475569</color>
+    <color name="day_glass_bg">#CCFFFFFF</color>
+    <color name="day_glass_border">#33000000</color>
+    <color name="day_glass_shadow">#1A000000</color>
+
+    <!-- Night theme colors -->
+    <color name="night_primary">#818CF8</color>
+    <color name="night_primary_variant">#6366F1</color>
+    <color name="night_surface">#000000</color>
+    <color name="night_surface_variant">#0F172A</color>
+    <color name="night_on_surface">#F8FAFC</color>
+    <color name="night_on_surface_variant">#94A3B8</color>
+    <color name="night_glass_bg">#CC000000</color>
+    <color name="night_glass_border">#33FFFFFF</color>
+    <color name="night_glass_shadow">#1AF8FAFC</color>
+
+    <!-- Common -->
+    <color name="qr_dot">#1E293B</color>
+    <color name="qr_bg">#FFFFFF</color>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/scanTabFragment">
+
+    <fragment
+        android:id="@+id/scanTabFragment"
+        android:name="com.zcj.qr.ui.scan.ScanTabFragment"
+        android:label="ScanTabFragment">
+        <action
+            android:id="@+id/action_scanTab_to_cameraScan"
+            app:destination="@id/cameraScanFragment"
+            app:popUpTo="@id/scanTabFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_scanTab_to_galleryScan"
+            app:destination="@id/galleryScanFragment"
+            app:popUpTo="@id/scanTabFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_scanTab_to_result"
+            app:destination="@id/scanResultActivity"
+            app:popUpTo="@id/scanTabFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cameraScanFragment"
+        android:name="com.zcj.qr.ui.scan.camera.CameraScanFragment"
+        android:label="CameraScanFragment" />
+
+    <fragment
+        android:id="@+id/galleryScanFragment"
+        android:name="com.zcj.qr.ui.scan.gallery.GalleryScanFragment"
+        android:label="GalleryScanFragment" />
+
+    <activity
+        android:id="@+id/scanResultActivity"
+        android:name="com.zcj.qr.ui.scan.result.ScanResultActivity"
+        android:label="ScanResultActivity" />
+
+    <fragment
+        android:id="@+id/generateTabFragment"
+        android:name="com.zcj.qr.ui.generate.GenerateTabFragment"
+        android:label="GenerateTabFragment">
+        <action
+            android:id="@+id/action_generateTab_to_quickCreate"
+            app:destination="@id/quickCreateFragment"
+            app:popUpTo="@id/generateTabFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_generateTab_to_customGenerate"
+            app:destination="@id/customGenerateFragment"
+            app:popUpTo="@id/generateTabFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_generateTab_to_preview"
+            app:destination="@id/qrPreviewActivity"
+            app:popUpTo="@id/generateTabFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_generateTab_to_history"
+            app:destination="@id/historyActivity"
+            app:popUpTo="@id/generateTabFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quickCreateFragment"
+        android:name="com.zcj.qr.ui.generate.quickcreate.QuickCreateFragment"
+        android:label="QuickCreateFragment">
+        <action
+            android:id="@+id/action_quickCreateFragment_to_dialog"
+            app:destination="@id/quickCreateDialog"
+            app:popUpTo="@id/quickCreateFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/quickCreateDialog"
+        android:name="com.zcj.qr.ui.generate.quickcreate.QuickCreateDialogFragment"
+        android:label="QuickCreateDialog" />
+
+    <fragment
+        android:id="@+id/customGenerateFragment"
+        android:name="com.zcj.qr.ui.generate.custom.CustomGenerateFragment"
+        android:label="CustomGenerateFragment">
+        <action
+            android:id="@+id/action_customGenerateFragment_to_preview"
+            app:destination="@id/qrPreviewActivity"
+            app:popUpTo="@id/customGenerateFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <activity
+        android:id="@+id/qrPreviewActivity"
+        android:name="com.zcj.qr.ui.generate.preview.QrPreviewActivity"
+        android:label="QrPreviewActivity" />
+
+    <activity
+        android:id="@+id/historyActivity"
+        android:name="com.zcj.qr.ui.history.HistoryActivity"
+        android:label="HistoryActivity" />
+</navigation>

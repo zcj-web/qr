@@ -1,0 +1,94 @@
+[
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/activity_history.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/activity_history.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/dialog_sms.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/dialog_sms.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/fragment_generate_tab.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/fragment_generate_tab.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/activity_qr_preview.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/activity_qr_preview.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/activity_main.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/dialog_url.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/dialog_url.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/activity_scan_result.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/activity_scan_result.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/fragment_gallery_scan.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/fragment_gallery_scan.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/fragment_scan_tab.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/fragment_scan_tab.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/fragment_camera_scan.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/fragment_camera_scan.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/item_history.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/item_history.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/glass_card.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/glass_card.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/dialog_contact.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/dialog_contact.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/item_quick_create.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/item_quick_create.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/view_empty_history.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/view_empty_history.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/fragment_scan_history.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/fragment_scan_history.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/fragment_history.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/fragment_history.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/dialog_email.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/dialog_email.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/activity_history_container.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/activity_history_container.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/fragment_custom_generate.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/fragment_custom_generate.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/dialog_wifi.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/dialog_wifi.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/fragment_quick_create.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/fragment_quick_create.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-mergeDebugResources-55:/layout/dialog_phone.xml",
+        "source": "com.zcj.qr.app-main-58:/layout/dialog_phone.xml"
+    }
+]

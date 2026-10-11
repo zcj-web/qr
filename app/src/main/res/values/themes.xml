@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Day Theme -->
+    <style name="Theme.QrCode" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/day_primary</item>
+        <item name="colorPrimaryVariant">@color/day_primary_variant</item>
+        <item name="colorOnPrimary">@color/day_on_surface</item>
+        <item name="colorSurface">@color/day_surface</item>
+        <item name="colorSurfaceVariant">@color/day_surface_variant</item>
+        <item name="colorOnSurface">@color/day_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/day_on_surface_variant</item>
+        <item name="android:windowBackground">@color/day_surface</item>
+        <item name="android:statusBarColor">@color/day_surface</item>
+        <item name="android:navigationBarColor">@color/day_surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <!-- Night Theme -->
+    <style name="Theme.QrCode.Night" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/night_primary</item>
+        <item name="colorPrimaryVariant">@color/night_primary_variant</item>
+        <item name="colorOnPrimary">@color/night_on_surface</item>
+        <item name="colorSurface">@color/night_surface</item>
+        <item name="colorSurfaceVariant">@color/night_surface_variant</item>
+        <item name="colorOnSurface">@color/night_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/night_on_surface_variant</item>
+        <item name="android:windowBackground">@color/night_surface</item>
+        <item name="android:statusBarColor">@color/night_surface</item>
+        <item name="android:navigationBarColor">@color/night_surface</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
+    <!-- ZXing Capture Theme -->
+    <style name="zxing_CaptureTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">#80000000</item>
+    </style>
+</resources>

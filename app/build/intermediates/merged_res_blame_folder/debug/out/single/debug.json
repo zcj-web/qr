@@ -1,0 +1,202 @@
+[
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_fragment_custom_generate.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/fragment_custom_generate.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_view_empty_history.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/view_empty_history.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_glass_card_night.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/glass_card_night.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_activity_history_container.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/activity_history_container.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_ic_sms.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/ic_sms.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_fragment_quick_create.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/fragment_quick_create.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_fragment_history.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/fragment_history.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_fragment_camera_scan.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/fragment_camera_scan.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_item_quick_create.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/item_quick_create.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_glass_button_pressed.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/glass_button_pressed.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_fragment_gallery_scan.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/fragment_gallery_scan.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_ic_phone.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/ic_phone.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_ic_camera.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/ic_camera.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_dialog_phone.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/dialog_phone.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_glass_button_selector_day.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/glass_button_selector_day.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_ic_delete.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/ic_delete.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_dialog_sms.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/dialog_sms.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_activity_history.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/activity_history.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_ic_flash_on.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/ic_flash_on.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_ic_quick_create.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/ic_quick_create.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_glass_button_day.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/glass_button_day.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_item_history.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/item_history.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_ic_gallery.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/ic_gallery.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_ic_back.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/ic_back.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_dialog_wifi.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/dialog_wifi.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_activity_scan_result.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/activity_scan_result.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_ic_app.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/ic_app.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_fragment_scan_tab.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/fragment_scan_tab.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_glass_card.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/glass_card.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_ic_flash_off.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/ic_flash_off.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_fragment_generate_tab.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/fragment_generate_tab.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_dialog_email.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/dialog_email.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_activity_qr_preview.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/activity_qr_preview.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_glass_button_night.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/glass_button_night.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_dialog_url.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/dialog_url.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/xml_file_paths.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/xml/file_paths.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_ic_email.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/ic_email.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_ic_url.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/ic_url.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_fragment_scan_history.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/fragment_scan_history.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_ic_contact.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/ic_contact.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_glass_card_day.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/glass_card_day.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_dialog_contact.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/dialog_contact.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/navigation_nav_main.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/navigation/nav_main.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/xml_data_extraction_rules.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/xml_backup_rules.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_ic_custom.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/ic_custom.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/drawable_ic_wifi.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/drawable/ic_wifi.xml"
+    },
+    {
+        "merged": "com.zcj.qr.app-merged_res-56:/layout_activity_main.xml.flat",
+        "source": "com.zcj.qr.app-main-58:/layout/activity_main.xml"
+    }
+]
