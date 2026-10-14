@@ -40,9 +40,12 @@ public final class ActivityQrPreviewBinding implements ViewBinding {
   @NonNull
   public final TextView tvContent;
 
+  @NonNull
+  public final TextView tvError;
+
   private ActivityQrPreviewBinding(@NonNull ScrollView rootView, @NonNull Button btnBack,
       @NonNull Button btnSave, @NonNull Button btnShare, @NonNull ImageView ivQr,
-      @NonNull ProgressBar progressBar, @NonNull TextView tvContent) {
+      @NonNull ProgressBar progressBar, @NonNull TextView tvContent, @NonNull TextView tvError) {
     this.rootView = rootView;
     this.btnBack = btnBack;
     this.btnSave = btnSave;
@@ -50,6 +53,7 @@ public final class ActivityQrPreviewBinding implements ViewBinding {
     this.ivQr = ivQr;
     this.progressBar = progressBar;
     this.tvContent = tvContent;
+    this.tvError = tvError;
   }
 
   @Override
@@ -115,8 +119,14 @@ public final class ActivityQrPreviewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvError;
+      TextView tvError = ViewBindings.findChildViewById(rootView, id);
+      if (tvError == null) {
+        break missingId;
+      }
+
       return new ActivityQrPreviewBinding((ScrollView) rootView, btnBack, btnSave, btnShare, ivQr,
-          progressBar, tvContent);
+          progressBar, tvContent, tvError);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

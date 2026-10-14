@@ -64,7 +64,25 @@
             "Bash(EOF)",
             "Bash(gradle assembleDebug)",
             "Bash(tar)",
-            "Bash($JAVA_HOME/bin/jar)"
+            "Bash($JAVA_HOME/bin/jar)",
+            "Bash(adb logcat)",
+            "Bash($JAVA_HOME/bin/dx)",
+            "Bash(while)",
+            "Bash(/usr/lib/jvm/java-21-openjdk-amd64/bin/java)",
+            "Bash(pip3 install)",
+            "Bash(/usr/lib/jvm/java-17-openjdk/bin/java)",
+            "Bash(xargs)",
+            "terminal(cd)",
+            "terminal(./gradlew)",
+            "terminal(1)",
+            "terminal",
+            "Bash(rm -f ~/workspace/app/build/outputs/apk/debug/app-debug.apk)",
+            "Bash(strings)",
+            "Bash(sleep)",
+            "Bash(ps)",
+            "Bash(md5sum)",
+            "Bash(aapt2)",
+            "Bash(hexdump)"
         ],
         "deny": []
     }

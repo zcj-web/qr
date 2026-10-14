@@ -14,11 +14,19 @@ class HistoryRepository constructor(private val db: QrDatabase) {
     fun generateHistoryLatest(n: Int): Flow<List<GenerateHistoryEntity>> = db.generateHistoryDao().getLatest(n)
 
     suspend fun addScan(content: String, type: String, encrypted: Boolean = false) {
-        db.scanHistoryDao().insert(ScanHistoryEntity(content = content, type = type, timestamp = System.currentTimeMillis(), isEncrypted = encrypted))
+        val existing = db.scanHistoryDao().exists(content)
+        if (!existing) {
+            db.scanHistoryDao().insert(ScanHistoryEntity(content = content, type = type, timestamp = System.currentTimeMillis(), isEncrypted = encrypted))
+        }
     }
 
-    suspend fun addGenerate(content: String, type: String, encrypted: Boolean = false) {
-        db.generateHistoryDao().insert(GenerateHistoryEntity(content = content, type = type, timestamp = System.currentTimeMillis(), hasEncryption = encrypted))
+    suspend fun addGenerate(content: String, type: String, encrypted: Boolean = false, styleJson: String? = null, logoFilePath: String? = null) {
+        val existingId = db.generateHistoryDao().getIdForContent(content)
+        if (existingId != null) {
+            db.generateHistoryDao().update(existingId, type, System.currentTimeMillis(), encrypted, styleJson, logoFilePath)
+        } else {
+            db.generateHistoryDao().insert(GenerateHistoryEntity(content = content, type = type, timestamp = System.currentTimeMillis(), hasEncryption = encrypted, styleJson = styleJson, logoFilePath = logoFilePath))
+        }
     }
 
     suspend fun deleteScan(id: Long) = db.scanHistoryDao().delete(id)

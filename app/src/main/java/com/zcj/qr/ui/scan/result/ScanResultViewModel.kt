@@ -12,6 +12,7 @@ class ScanResultViewModel : ViewModel() {
     val protocolType = MutableLiveData<ProtocolType?>(null)
     val isDecrypting = MutableLiveData(false)
     val decryptedContent = MutableLiveData<String?>(null)
+    val decodeAttempted = MutableLiveData(false)
 
     fun setContent(text: String) {
         content.value = text
@@ -22,12 +23,21 @@ class ScanResultViewModel : ViewModel() {
         val cipher = QrProtocolParser.extractCipher(content.value ?: "")
         isDecrypting.value = true
         decryptedContent.value = null
+        decodeAttempted.value = true
         // Run on background thread
         Thread {
             val result = Aes256GcmCrypto.decrypt(cipher, password)
             android.os.Handler(android.os.Looper.getMainLooper()).post {
                 isDecrypting.value = false
-                decryptedContent.value = result
+                if (result != null) {
+                    // Re-parse decrypted content to get correct protocol type
+                    val newType = ProtocolHandler.parse(result)
+                    content.value = result
+                    protocolType.value = newType
+                    decryptedContent.value = result
+                } else {
+                    decryptedContent.value = null
+                }
             }
         }.start()
     }

@@ -4,7 +4,7 @@
             "outputFile": "com.zcj.qr.app-mergeDebugResources-54:/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "/root/.gradle/caches/8.11.1/transforms/9e36416de062a885a95a76ffc8ef3198/transformed/appcompat-1.6.1/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "source": "/root/.gradle/caches/transforms-4/4c3a1c6b2da7730b4d1df9ce58cabdf9/transformed/appcompat-1.6.1/res/values-h720dp-v13/values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,0 +1,27 @@
+# 二维码 App 构建说明
+
+## 问题修复
+- 原有代码使用 Navigation Component (findNavController)，但 Fragment 直接放在 ViewPager2 中
+  没有 NavHostFragment，导致导航调用失败（静默卡住）
+- 改为显式 Intent 导航 + 独立 Activity 包装 Fragment
+
+## 新增 Activity
+- CameraScanActivity: 相机扫描
+- GalleryScanActivity: 相册扫描  
+- QuickCreateActivity: 快速创建模板
+- CustomGenerateActivity: 自定义文字生成
+
+## 环境依赖
+- Android SDK Build Tools 34.0.0 (已安装)
+- ARM64 原生 aapt2 (从 AndroidIDEOfficial 项目获取)
+- JDK 17 (OpenJDK 17.0.18)
+
+## 构建命令
+```bash
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+export ANDROID_HOME=/root/android-sdk
+gradle assembleDebug --no-daemon -x mergeDebugJavaResource
+```
+
+注意: 跳过 mergeDebugJavaResource 是因为 Alpine Linux 容器临时文件删除有权限问题，
+不影响 APK 功能和签名。

@@ -4,6 +4,7 @@ package com.zcj.qr.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -12,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.zcj.qr.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -20,6 +22,15 @@ import java.lang.String;
 public final class DialogWifiBinding implements ViewBinding {
   @NonNull
   private final LinearLayout rootView;
+
+  @NonNull
+  public final CheckBox cbEncrypt;
+
+  @NonNull
+  public final TextInputLayout encryptPasswordLayout;
+
+  @NonNull
+  public final TextInputEditText etEncryptPassword;
 
   @NonNull
   public final TextInputEditText etPassword;
@@ -39,11 +50,15 @@ public final class DialogWifiBinding implements ViewBinding {
   @NonNull
   public final RadioButton radioWpa;
 
-  private DialogWifiBinding(@NonNull LinearLayout rootView, @NonNull TextInputEditText etPassword,
-      @NonNull TextInputEditText etSsid, @NonNull RadioGroup radioGroup,
-      @NonNull RadioButton radioNone, @NonNull RadioButton radioWep,
+  private DialogWifiBinding(@NonNull LinearLayout rootView, @NonNull CheckBox cbEncrypt,
+      @NonNull TextInputLayout encryptPasswordLayout, @NonNull TextInputEditText etEncryptPassword,
+      @NonNull TextInputEditText etPassword, @NonNull TextInputEditText etSsid,
+      @NonNull RadioGroup radioGroup, @NonNull RadioButton radioNone, @NonNull RadioButton radioWep,
       @NonNull RadioButton radioWpa) {
     this.rootView = rootView;
+    this.cbEncrypt = cbEncrypt;
+    this.encryptPasswordLayout = encryptPasswordLayout;
+    this.etEncryptPassword = etEncryptPassword;
     this.etPassword = etPassword;
     this.etSsid = etSsid;
     this.radioGroup = radioGroup;
@@ -79,6 +94,24 @@ public final class DialogWifiBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.cbEncrypt;
+      CheckBox cbEncrypt = ViewBindings.findChildViewById(rootView, id);
+      if (cbEncrypt == null) {
+        break missingId;
+      }
+
+      id = R.id.encryptPasswordLayout;
+      TextInputLayout encryptPasswordLayout = ViewBindings.findChildViewById(rootView, id);
+      if (encryptPasswordLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.etEncryptPassword;
+      TextInputEditText etEncryptPassword = ViewBindings.findChildViewById(rootView, id);
+      if (etEncryptPassword == null) {
+        break missingId;
+      }
+
       id = R.id.etPassword;
       TextInputEditText etPassword = ViewBindings.findChildViewById(rootView, id);
       if (etPassword == null) {
@@ -115,8 +148,8 @@ public final class DialogWifiBinding implements ViewBinding {
         break missingId;
       }
 
-      return new DialogWifiBinding((LinearLayout) rootView, etPassword, etSsid, radioGroup,
-          radioNone, radioWep, radioWpa);
+      return new DialogWifiBinding((LinearLayout) rootView, cbEncrypt, encryptPasswordLayout,
+          etEncryptPassword, etPassword, etSsid, radioGroup, radioNone, radioWep, radioWpa);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

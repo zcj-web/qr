@@ -1,0 +1,461 @@
+# LogSleuth session (snapshot)
+# saved: 2026-10-14T04:56:25.861265Z
+# device: Xiaomi Mi 10
+# android: 13 (SDK 33)
+# access: READ_LOGS
+10-14 12:54:14.913 10586 11557 11680 D ViewContentFactory: initViewContentFetcherClass
+10-14 12:54:14.913 10586 11557 11680 D ViewContentFactory: getInterceptorPackageInfo
+10-14 12:54:14.914 10586 11557 11680 D ViewContentFactory: getInitialApplication took 1ms
+10-14 12:54:14.914 10586 11557 11680 D ViewContentFactory: packageInfo.packageName: com.miui.catcherpatch
+10-14 12:54:14.917 10586 11557 11557 D ScrollerOptimizationManager: registerConfigChangedListener
+10-14 12:54:14.923 10586 11557 11680 D ViewContentFactory: initViewContentFetcherClass took 10ms
+10-14 12:54:14.923 10586 11557 11680 I ContentCatcher: ViewContentFetcher : ViewContentFetcher
+10-14 12:54:14.923 10586 11557 11680 D ViewContentFactory: createInterceptor took 10ms
+10-14 12:54:14.931 10586 11557 11680 I ContentCatcher: Interceptor : Catcher list invalid for com.zcj.qr@com.zcj.qr.MainActivity@138854874
+10-14 12:54:14.931 10586 11557 11680 I ContentCatcher: Interceptor : Get featureInfo from config image_pick_mode
+10-14 12:54:14.932 10586 11557 11680 I ContentCatcher: Interceptor : Get featureInfo from config pick_mode
+10-14 12:54:14.934 10586 11557 11557 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10586; state: ENABLED
+10-14 12:54:14.934 10586 11557 11557 D ScrollerOptimizationManager: registerConfigChangedListener
+10-14 12:54:14.944 10586 11557 11557 D IS_CTS_MODE: false
+10-14 12:54:14.944 10586 11557 11557 D MULTI_WINDOW_ENABLED: false
+10-14 12:54:14.946 10586 11557 11557 D DecorView[]: getWindowModeFromSystem  windowmode is 1
+10-14 12:54:14.953 10586 11557 11557 W com.zcj.qr: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+10-14 12:54:14.953 10586 11557 11557 W com.zcj.qr: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+10-14 12:54:14.964 10586 11557 11557 D CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10586; state: ENABLED
+10-14 12:54:14.994 10586 11557 11557 I wm_on_create_called: [0,123051417,com.zcj.qr.MainActivity,performCreate,131]
+10-14 12:54:14.999 10586 11557 11557 I wm_on_start_called: [0,123051417,com.zcj.qr.MainActivity,handleStartActivity,2]
+10-14 12:54:15.006 10586 11557 11557 I wm_on_resume_called: [0,123051417,com.zcj.qr.MainActivity,RESUME_ACTIVITY,6]
+10-14 12:54:15.023 10586 11557 11557 D DecorView[]: getWindowModeFromSystem  windowmode is 1
+10-14 12:54:15.023 10586 11557 11557 D DecorView[]: updateDecorCaptionStatus windowMode is 1
+10-14 12:54:15.031 10586 11557 11557 I wm_on_top_resumed_gained_called: [123051417,com.zcj.qr.MainActivity,topStateChangedWhenResumed]
+10-14 12:54:15.060 10586 11557 11663 I AdrenoGLES-0: QUALCOMM build                   : db3d445dbc, Ia06b22fa1a
+10-14 12:54:15.060 10586 11557 11663 I AdrenoGLES-0: Build Date                       : 10/04/21
+10-14 12:54:15.060 10586 11557 11663 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.32.02.16
+10-14 12:54:15.060 10586 11557 11663 I AdrenoGLES-0: Local Branch                     : 
+10-14 12:54:15.060 10586 11557 11663 I AdrenoGLES-0: Remote Branch                    : 
+10-14 12:54:15.060 10586 11557 11663 I AdrenoGLES-0: Remote Branch                    : 
+10-14 12:54:15.060 10586 11557 11663 I AdrenoGLES-0: Reconstruct Branch               : 
+10-14 12:54:15.060 10586 11557 11663 I AdrenoGLES-0: Build Config                     : S P 10.0.7 AArch64
+10-14 12:54:15.060 10586 11557 11663 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+10-14 12:54:15.066 10586 11557 11663 I AdrenoGLES-0: PFP: 0x016dd093, ME: 0x00000000
+10-14 12:54:15.073 10586 11557 11663 W libc    : Access denied finding property "vendor.migl.debug"
+10-14 12:54:15.075 10586 11557 11663 E libEGL  : pre_cache appList: ,,,
+10-14 12:54:15.142 10586 11557 11557 D VRI[MainActivity]: vri.reportNextDraw android.view.ViewRootImpl.performTraversals:4013 android.view.ViewRootImpl.doTraversal:2725 android.view.ViewRootImpl$TraversalRunnable.run:9812 android.view.Choreographer$CallbackRecord.run:1505 android.view.Choreographer$CallbackRecord.run:1513 
+10-14 12:54:15.142 10586 11557 11557 D VRI[MainActivity]: vri.Setup new sync id=0 syncSeqId=0
+10-14 12:54:15.148 10586 11557 11663 D com.zcj.qr: MiuiProcessManagerServiceStub setSchedFifo
+10-14 12:54:15.148 10586 11557 11663 I MiuiProcessManagerImpl: setSchedFifo pid:11557, mode:3
+10-14 12:54:15.149 10586 11557 11663 E libboost: fail to open node: No such file or directory
+10-14 12:54:15.160 10586 11557 11663 E perf_hint: Session creation failed, mPreferredRateNanos: -1
+10-14 12:54:15.160 10586 11557 11557 D VRI[MainActivity]: vri.reportDrawFinished syncSeqId=0 android.view.ViewRootImpl.lambda$createSyncIfNeeded$4$android-view-ViewRootImpl:4081 android.view.ViewRootImpl$$ExternalSyntheticLambda2.run:6 android.os.Handler.handleCallback:942 android.os.Handler.dispatchMessage:99 android.os.Looper.loopOnce:211 
+10-14 12:54:15.163 10586 11557 11557 I wm_on_idle_called: com.zcj.qr.MainActivity
+10-14 12:54:15.189 10586 11557 11557 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+10-14 12:54:15.190 10586 11557 11557 I HandWritingStubImpl: refreshLastKeyboardType: 1
+10-14 12:54:15.191 10586 11557 11557 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-14 12:54:15.212 10586 11557 11557 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-14 12:54:15.216 10586 11557 11557 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-14 12:54:15.770 10586 11557 11557 I wm_on_top_resumed_lost_called: [123051417,com.zcj.qr.MainActivity,topStateChangedWhenResumed]
+10-14 12:54:15.771 10586 11557 11557 I wm_on_paused_called: [0,123051417,com.zcj.qr.MainActivity,performPause,0]
+10-14 12:54:15.799 10586 11557 11680 D ViewContentFactory: initViewContentFetcherClass
+10-14 12:54:15.800 10586 11557 11680 I ContentCatcher: ViewContentFetcher : ViewContentFetcher
+10-14 12:54:15.800 10586 11557 11680 D ViewContentFactory: createInterceptor took 0ms
+10-14 12:54:15.802 10586 11557 11680 I ContentCatcher: Interceptor : Catcher list invalid for com.zcj.qr@com.zcj.qr.ui.history.HistoryActivity@252356229
+10-14 12:54:15.802 10586 11557 11680 I ContentCatcher: Interceptor : Get featureInfo from config image_pick_mode
+10-14 12:54:15.802 10586 11557 11680 I ContentCatcher: Interceptor : Get featureInfo from config pick_mode
+10-14 12:54:15.808 10586 11557 11557 D ScrollerOptimizationManager: registerConfigChangedListener
+10-14 12:54:15.819 10586 11557 11557 D IS_CTS_MODE: false
+10-14 12:54:15.819 10586 11557 11557 D MULTI_WINDOW_ENABLED: false
+10-14 12:54:15.820 10586 11557 11557 D DecorView[]: getWindowModeFromSystem  windowmode is 1
+10-14 12:54:15.850 10586 11557 11557 I wm_on_create_called: [0,74742461,com.zcj.qr.ui.history.HistoryActivity,performCreate,59]
+10-14 12:54:15.852 10586 11557 11557 I wm_on_start_called: [0,74742461,com.zcj.qr.ui.history.HistoryActivity,handleStartActivity,1]
+10-14 12:54:15.859 10586 11557 11557 I wm_on_resume_called: [0,74742461,com.zcj.qr.ui.history.HistoryActivity,RESUME_ACTIVITY,7]
+10-14 12:54:15.862 10586 11557 11557 D DecorView[]: getWindowModeFromSystem  windowmode is 1
+10-14 12:54:15.862 10586 11557 11557 D DecorView[]: updateDecorCaptionStatus windowMode is 1
+10-14 12:54:15.888 10586 11557 11557 I wm_on_top_resumed_gained_called: [74742461,com.zcj.qr.ui.history.HistoryActivity,topStateChangedWhenResumed]
+10-14 12:54:15.910 10586 11557 11557 D VRI[HistoryActivity]: vri.reportNextDraw android.view.ViewRootImpl.performTraversals:4013 android.view.ViewRootImpl.doTraversal:2725 android.view.ViewRootImpl$TraversalRunnable.run:9812 android.view.Choreographer$CallbackRecord.run:1505 android.view.Choreographer$CallbackRecord.run:1513 
+10-14 12:54:15.910 10586 11557 11557 D VRI[HistoryActivity]: vri.Setup new sync id=0 syncSeqId=0
+10-14 12:54:15.917 10586 11557 11663 E perf_hint: Session creation failed, mPreferredRateNanos: -1
+10-14 12:54:15.918 10586 11557 11557 D VRI[HistoryActivity]: vri.reportDrawFinished syncSeqId=0 android.view.ViewRootImpl.lambda$createSyncIfNeeded$4$android-view-ViewRootImpl:4081 android.view.ViewRootImpl$$ExternalSyntheticLambda2.run:6 android.os.Handler.handleCallback:942 android.os.Handler.dispatchMessage:99 android.os.Looper.loopOnce:211 
+10-14 12:54:15.925 10586 11557 11557 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+10-14 12:54:16.040 10586 11557 11557 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+10-14 12:54:16.041 10586 11557 11557 I HandWritingStubImpl: refreshLastKeyboardType: 1
+10-14 12:54:16.041 10586 11557 11557 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-14 12:54:16.080 10586 11557 11557 I wm_on_idle_called: com.zcj.qr.ui.history.HistoryActivity
+10-14 12:54:16.483 10586 11557 11557 I wm_on_stop_called: [0,123051417,com.zcj.qr.MainActivity,STOP_ACTIVITY_ITEM,1]
+10-14 12:54:18.083 10586 11557 11557 I wm_on_top_resumed_lost_called: [74742461,com.zcj.qr.ui.history.HistoryActivity,topStateChangedWhenResumed]
+10-14 12:54:18.085 10586 11557 11557 I wm_on_paused_called: [0,74742461,com.zcj.qr.ui.history.HistoryActivity,performPause,0]
+10-14 12:54:18.108 10586 11557 11680 D ViewContentFactory: initViewContentFetcherClass
+10-14 12:54:18.108 10586 11557 11680 I ContentCatcher: ViewContentFetcher : ViewContentFetcher
+10-14 12:54:18.108 10586 11557 11680 D ViewContentFactory: createInterceptor took 0ms
+10-14 12:54:18.109 10586 11557 11680 I ContentCatcher: Interceptor : Catcher list invalid for com.zcj.qr@com.zcj.qr.ui.scan.result.ScanResultActivity@61931529
+10-14 12:54:18.110 10586 11557 11680 I ContentCatcher: Interceptor : Get featureInfo from config image_pick_mode
+10-14 12:54:18.110 10586 11557 11680 I ContentCatcher: Interceptor : Get featureInfo from config pick_mode
+10-14 12:54:18.140 10586 11557 11557 D IS_CTS_MODE: false
+10-14 12:54:18.141 10586 11557 11557 D MULTI_WINDOW_ENABLED: false
+10-14 12:54:18.142 10586 11557 11557 D DecorView[]: getWindowModeFromSystem  windowmode is 1
+10-14 12:54:18.148 10586 11557 11557 I wm_on_create_called: [0,236954780,com.zcj.qr.ui.scan.result.ScanResultActivity,performCreate,43]
+10-14 12:54:18.151 10586 11557 11557 I wm_on_start_called: [0,236954780,com.zcj.qr.ui.scan.result.ScanResultActivity,handleStartActivity,0]
+10-14 12:54:18.154 10586 11557 11557 I wm_on_resume_called: [0,236954780,com.zcj.qr.ui.scan.result.ScanResultActivity,RESUME_ACTIVITY,1]
+10-14 12:54:18.158 10586 11557 11557 D DecorView[]: getWindowModeFromSystem  windowmode is 1
+10-14 12:54:18.158 10586 11557 11557 D DecorView[]: updateDecorCaptionStatus windowMode is 1
+10-14 12:54:18.166 10586 11557 11557 I wm_on_top_resumed_gained_called: [236954780,com.zcj.qr.ui.scan.result.ScanResultActivity,topStateChangedWhenResumed]
+10-14 12:54:18.193 10586 11557 11557 D VRI[ScanResultActivity]: vri.reportNextDraw android.view.ViewRootImpl.performTraversals:4013 android.view.ViewRootImpl.doTraversal:2725 android.view.ViewRootImpl$TraversalRunnable.run:9812 android.view.Choreographer$CallbackRecord.run:1505 android.view.Choreographer$CallbackRecord.run:1513 
+10-14 12:54:18.194 10586 11557 11557 D VRI[ScanResultActivity]: vri.Setup new sync id=0 syncSeqId=0
+10-14 12:54:18.209 10586 11557 11663 E perf_hint: Session creation failed, mPreferredRateNanos: -1
+10-14 12:54:18.210 10586 11557 11557 D VRI[ScanResultActivity]: vri.reportDrawFinished syncSeqId=0 android.view.ViewRootImpl.lambda$createSyncIfNeeded$4$android-view-ViewRootImpl:4081 android.view.ViewRootImpl$$ExternalSyntheticLambda2.run:6 android.os.Handler.handleCallback:942 android.os.Handler.dispatchMessage:99 android.os.Looper.loopOnce:211 
+10-14 12:54:18.211 10586 11557 11557 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+10-14 12:54:18.231 10586 11557 11557 I wm_on_idle_called: com.zcj.qr.ui.scan.result.ScanResultActivity
+10-14 12:54:18.235 10586 11557 11557 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+10-14 12:54:18.236 10586 11557 11557 I HandWritingStubImpl: refreshLastKeyboardType: 1
+10-14 12:54:18.236 10586 11557 11557 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-14 12:54:18.258 10586 11557 11571 I com.zcj.qr: Compiler allocated 4964KB to compile void android.view.ViewRootImpl.performTraversals()
+10-14 12:54:18.742 10586 11557 11557 I wm_on_stop_called: [0,74742461,com.zcj.qr.ui.history.HistoryActivity,STOP_ACTIVITY_ITEM,0]
+10-14 12:54:20.218 10586 11557 11557 D MIUIInput: [KeyEvent] ViewRootImpl windowName 'com.zcj.qr/com.zcj.qr.ui.scan.result.ScanResultActivity', KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x48, repeatCount=0, eventTime=659614387000000, downTime=659614387000000, deviceId=-1, source=0x101, displayId=-1 }, phoneEventTime=12:54:20.196
+10-14 12:54:20.220 10586 11557 11557 D MIUIInput: [KeyEvent] ViewRootImpl windowName 'com.zcj.qr/com.zcj.qr.ui.scan.result.ScanResultActivity', KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x48, repeatCount=0, eventTime=659614410000000, downTime=659614410000000, deviceId=-1, source=0x101, displayId=-1 }, phoneEventTime=12:54:20.219
+10-14 12:54:20.231 10586 11557 11557 I wm_on_top_resumed_lost_called: [236954780,com.zcj.qr.ui.scan.result.ScanResultActivity,topStateChangedWhenResumed]
+10-14 12:54:20.233 10586 11557 11557 I wm_on_paused_called: [0,236954780,com.zcj.qr.ui.scan.result.ScanResultActivity,performPause,0]
+10-14 12:54:20.243 10586 11557 11557 I wm_on_restart_called: [0,74742461,com.zcj.qr.ui.history.HistoryActivity,performRestartActivity,0]
+10-14 12:54:20.244 10586 11557 11557 I wm_on_start_called: [0,74742461,com.zcj.qr.ui.history.HistoryActivity,handleStartActivity,1]
+10-14 12:54:20.247 10586 11557 11557 I wm_on_resume_called: [0,74742461,com.zcj.qr.ui.history.HistoryActivity,RESUME_ACTIVITY,2]
+10-14 12:54:20.247 10586 11557 11557 I wm_on_top_resumed_gained_called: [74742461,com.zcj.qr.ui.history.HistoryActivity,topWhenResuming]
+10-14 12:54:20.261 10586 11557 11557 D VRI[HistoryActivity]: vri.reportNextDraw android.view.ViewRootImpl.performTraversals:4013 android.view.ViewRootImpl.doTraversal:2725 android.view.ViewRootImpl$TraversalRunnable.run:9812 android.view.Choreographer$CallbackRecord.run:1505 android.view.Choreographer$CallbackRecord.run:1513 
+10-14 12:54:20.261 10586 11557 11557 D VRI[HistoryActivity]: vri.Setup new sync id=1 syncSeqId=0
+10-14 12:54:20.274 10586 11557 11557 D VRI[HistoryActivity]: vri.reportDrawFinished syncSeqId=0 android.view.ViewRootImpl.lambda$createSyncIfNeeded$4$android-view-ViewRootImpl:4081 android.view.ViewRootImpl$$ExternalSyntheticLambda2.run:6 android.os.Handler.handleCallback:942 android.os.Handler.dispatchMessage:99 android.os.Looper.loopOnce:211 
+10-14 12:54:20.276 10586 11557 11557 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+10-14 12:54:20.296 10586 11557 11557 I wm_on_idle_called: com.zcj.qr.ui.history.HistoryActivity
+10-14 12:54:20.299 10586 11557 11557 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+10-14 12:54:20.302 10586 11557 11557 I HandWritingStubImpl: refreshLastKeyboardType: 1
+10-14 12:54:20.303 10586 11557 11557 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-14 12:54:20.493 10586 11557 11816 D ProfileInstaller: Installing profile for com.zcj.qr
+10-14 12:54:20.826 10586 11557 11557 I wm_on_stop_called: [0,236954780,com.zcj.qr.ui.scan.result.ScanResultActivity,LIFECYCLER_STOP_ACTIVITY,0]
+10-14 12:54:20.828 10586 11557 11557 I wm_on_destroy_called: [0,236954780,com.zcj.qr.ui.scan.result.ScanResultActivity,performDestroy,1]
+10-14 12:54:21.432 10586 11557 11557 D IS_CTS_MODE: false
+10-14 12:54:21.433 10586 11557 11557 D MULTI_WINDOW_ENABLED: false
+10-14 12:54:21.459 10586 11557 11557 D ScrollerOptimizationManager: registerConfigChangedListener
+10-14 12:54:21.469 10586 11557 11557 D ScrollerOptimizationManager: registerConfigChangedListener
+10-14 12:54:21.497 10586 11557 11557 D DecorView[]: updateDecorCaptionStatus windowMode is 1
+10-14 12:54:21.551 10586 11557 11557 D VRI[HistoryActivity]: vri.reportNextDraw android.view.ViewRootImpl.performTraversals:4013 android.view.ViewRootImpl.doTraversal:2725 android.view.ViewRootImpl$TraversalRunnable.run:9812 android.view.Choreographer$CallbackRecord.run:1505 android.view.Choreographer$CallbackRecord.run:1513 
+10-14 12:54:21.551 10586 11557 11557 D VRI[HistoryActivity]: vri.Setup new sync id=0 syncSeqId=0
+10-14 12:54:21.563 10586 11557 11663 E perf_hint: Session creation failed, mPreferredRateNanos: -1
+10-14 12:54:21.564 10586 11557 11557 D VRI[HistoryActivity]: vri.reportDrawFinished syncSeqId=0 android.view.ViewRootImpl.lambda$createSyncIfNeeded$4$android-view-ViewRootImpl:4081 android.view.ViewRootImpl$$ExternalSyntheticLambda2.run:6 android.os.Handler.handleCallback:942 android.os.Handler.dispatchMessage:99 android.os.Looper.loopOnce:211 
+10-14 12:54:21.584 10586 11557 11557 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+10-14 12:54:21.642 10586 11557 11557 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+10-14 12:54:22.254 10586 11557 11557 D CompatibilityChangeReporter: Compat change id reported: 147798919; UID 10586; state: ENABLED
+10-14 12:54:22.268 10586 11557 11663 D OpenGLRenderer: endAllActiveAnimators on 0xb4000075e8b61600 (RippleDrawable) with handle 0xb40000764d3e6740
+10-14 12:54:22.341 10586 11557 11557 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+10-14 12:54:22.342 10586 11557 11557 I HandWritingStubImpl: refreshLastKeyboardType: 1
+10-14 12:54:22.342 10586 11557 11557 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-14 12:54:22.790 10586 11557 11625 I com.zcj.qr: ProcessProfilingInfo new_methods=1877 is saved saved_to_disk=1 resolve_classes_delay=8000
+10-14 12:54:23.020 10586 11557 11557 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+10-14 12:54:23.423 10586 11557 11557 I wm_on_top_resumed_lost_called: [74742461,com.zcj.qr.ui.history.HistoryActivity,topStateChangedWhenResumed]
+10-14 12:54:23.453 10586 11557 11557 I wm_on_paused_called: [0,74742461,com.zcj.qr.ui.history.HistoryActivity,performPause,0]
+10-14 12:54:23.496 10586 11557 11557 I wm_on_stop_called: [0,74742461,com.zcj.qr.ui.history.HistoryActivity,STOP_ACTIVITY_ITEM,1]
+10-14 12:54:27.063 10586 11557 11557 I wm_on_restart_called: [0,74742461,com.zcj.qr.ui.history.HistoryActivity,performRestartActivity,0]
+10-14 12:54:27.064 10586 11557 11557 I wm_on_start_called: [0,74742461,com.zcj.qr.ui.history.HistoryActivity,handleStartActivity,1]
+10-14 12:54:27.072 10586 11557 11557 I wm_on_resume_called: [0,74742461,com.zcj.qr.ui.history.HistoryActivity,RESUME_ACTIVITY,4]
+10-14 12:54:27.073 10586 11557 11557 I wm_on_top_resumed_gained_called: [74742461,com.zcj.qr.ui.history.HistoryActivity,topWhenResuming]
+10-14 12:54:27.105 10586 11557 11557 D VRI[HistoryActivity]: vri.reportNextDraw android.view.ViewRootImpl.performTraversals:4013 android.view.ViewRootImpl.doTraversal:2725 android.view.ViewRootImpl$TraversalRunnable.run:9812 android.view.Choreographer$CallbackRecord.run:1505 android.view.Choreographer$CallbackRecord.run:1513 
+10-14 12:54:27.105 10586 11557 11557 D VRI[HistoryActivity]: vri.Setup new sync id=2 syncSeqId=0
+10-14 12:54:27.112 10586 11557 11737 D AppScoutStateMachine: 11557-ScoutStateMachinecreated
+10-14 12:54:27.116 10586 11557 11557 D VRI[HistoryActivity]: vri.reportDrawFinished syncSeqId=0 android.view.ViewRootImpl.lambda$createSyncIfNeeded$4$android-view-ViewRootImpl:4081 android.view.ViewRootImpl$$ExternalSyntheticLambda2.run:6 android.os.Handler.handleCallback:942 android.os.Handler.dispatchMessage:99 android.os.Looper.loopOnce:211 
+10-14 12:54:27.120 10586 11557 11557 I wm_on_idle_called: com.zcj.qr.ui.history.HistoryActivity
+10-14 12:54:27.145 10586 11557 11557 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+10-14 12:54:27.145 10586 11557 11557 I HandWritingStubImpl: refreshLastKeyboardType: 1
+10-14 12:54:27.145 10586 11557 11557 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-14 12:54:27.155 10586 11557 11572 W com.zcj.qr: Cleared Reference was only reachable from finalizer (only reported once)
+10-14 12:54:27.159 10586 11557 11572 I com.zcj.qr: This is non sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:54:28.350 10586 11557 11557 D MIUIInput: [KeyEvent] ViewRootImpl windowName 'com.zcj.qr/com.zcj.qr.ui.history.HistoryActivity', KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x48, repeatCount=0, eventTime=659622539000000, downTime=659622539000000, deviceId=-1, source=0x101, displayId=-1 }, phoneEventTime=12:54:28.348
+10-14 12:54:28.352 10586 11557 11557 D MIUIInput: [KeyEvent] ViewRootImpl windowName 'com.zcj.qr/com.zcj.qr.ui.history.HistoryActivity', KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x48, repeatCount=0, eventTime=659622542000000, downTime=659622542000000, deviceId=-1, source=0x101, displayId=-1 }, phoneEventTime=12:54:28.351
+10-14 12:54:28.353  root  1082  1303 E ANDR-PERF-OPTSHANDLER: Perflock resource /sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/min_freq not supported
+10-14 12:54:28.353  root  1082  1303 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [12, 4]
+10-14 12:54:28.361 10586 11557 11557 I wm_on_top_resumed_lost_called: [74742461,com.zcj.qr.ui.history.HistoryActivity,topStateChangedWhenResumed]
+10-14 12:54:28.362 10586 11557 11557 I wm_on_paused_called: [0,74742461,com.zcj.qr.ui.history.HistoryActivity,performPause,0]
+10-14 12:54:28.373 10586 11557 11557 I wm_on_restart_called: [0,123051417,com.zcj.qr.MainActivity,performRestartActivity,0]
+10-14 12:54:28.374 10586 11557 11557 I wm_on_start_called: [0,123051417,com.zcj.qr.MainActivity,handleStartActivity,1]
+10-14 12:54:28.377 10586 11557 11557 I wm_on_resume_called: [0,123051417,com.zcj.qr.MainActivity,RESUME_ACTIVITY,1]
+10-14 12:54:28.377 10586 11557 11557 I wm_on_top_resumed_gained_called: [123051417,com.zcj.qr.MainActivity,topWhenResuming]
+10-14 12:54:28.396 10586 11557 11557 D VRI[MainActivity]: vri.reportNextDraw android.view.ViewRootImpl.performTraversals:4013 android.view.ViewRootImpl.doTraversal:2725 android.view.ViewRootImpl$TraversalRunnable.run:9812 android.view.Choreographer$CallbackRecord.run:1505 android.view.Choreographer$CallbackRecord.run:1513 
+10-14 12:54:28.396 10586 11557 11557 D VRI[MainActivity]: vri.Setup new sync id=1 syncSeqId=0
+10-14 12:54:28.403 10586 11557 11557 D VRI[MainActivity]: vri.reportDrawFinished syncSeqId=0 android.view.ViewRootImpl.lambda$createSyncIfNeeded$4$android-view-ViewRootImpl:4081 android.view.ViewRootImpl$$ExternalSyntheticLambda2.run:6 android.os.Handler.handleCallback:942 android.os.Handler.dispatchMessage:99 android.os.Looper.loopOnce:211 
+10-14 12:54:28.406 10586 11557 11557 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+10-14 12:54:28.436 10586 11557 11557 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+10-14 12:54:28.437 10586 11557 11557 I HandWritingStubImpl: refreshLastKeyboardType: 1
+10-14 12:54:28.438 10586 11557 11557 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-14 12:54:28.481 10586 11557 11557 I wm_on_idle_called: com.zcj.qr.MainActivity
+10-14 12:54:28.938 10586 11557 11557 I wm_on_stop_called: [0,74742461,com.zcj.qr.ui.history.HistoryActivity,LIFECYCLER_STOP_ACTIVITY,0]
+10-14 12:54:28.948 10586 11557 11557 I wm_on_destroy_called: [0,74742461,com.zcj.qr.ui.history.HistoryActivity,performDestroy,1]
+10-14 12:54:28.996 10586 11557 11557 D MIUIInput: [KeyEvent] ViewRootImpl windowName 'com.zcj.qr/com.zcj.qr.MainActivity', KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x48, repeatCount=0, eventTime=659623184000000, downTime=659623184000000, deviceId=-1, source=0x101, displayId=-1 }, phoneEventTime=12:54:28.993
+10-14 12:54:28.997 10586 11557 11557 D MIUIInput: [KeyEvent] ViewRootImpl windowName 'com.zcj.qr/com.zcj.qr.MainActivity', KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x48, repeatCount=0, eventTime=659623187000000, downTime=659623187000000, deviceId=-1, source=0x101, displayId=-1 }, phoneEventTime=12:54:28.996
+10-14 12:54:29.005 10586 11557 11557 I wm_on_top_resumed_lost_called: [123051417,com.zcj.qr.MainActivity,topStateChangedWhenResumed]
+10-14 12:54:29.019 10586 11557 11557 I wm_on_paused_called: [0,123051417,com.zcj.qr.MainActivity,performPause,0]
+10-14 12:54:29.041 10586 11557 11557 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+10-14 12:54:29.607 10586 11557 11557 I wm_on_stop_called: [0,123051417,com.zcj.qr.MainActivity,STOP_ACTIVITY_ITEM,1]
+10-14 12:54:59.698 10586 11557 11557 I wm_on_restart_called: [0,123051417,com.zcj.qr.MainActivity,performRestartActivity,0]
+10-14 12:54:59.712 10586 11557 11557 I wm_on_start_called: [0,123051417,com.zcj.qr.MainActivity,handleStartActivity,12]
+10-14 12:54:59.714 10586 11557 11737 D AppScoutStateMachine: 11557-ScoutStateMachinecreated
+10-14 12:54:59.740 10586 11557 11557 I wm_on_resume_called: [0,123051417,com.zcj.qr.MainActivity,RESUME_ACTIVITY,24]
+10-14 12:54:59.741 10586 11557 11557 I wm_on_top_resumed_gained_called: [123051417,com.zcj.qr.MainActivity,topWhenResuming]
+10-14 12:54:59.786 10586 11557 11557 D VRI[MainActivity]: vri.reportNextDraw android.view.ViewRootImpl.performTraversals:4013 android.view.ViewRootImpl.doTraversal:2725 android.view.ViewRootImpl$TraversalRunnable.run:9812 android.view.Choreographer$CallbackRecord.run:1505 android.view.Choreographer$CallbackRecord.run:1513 
+10-14 12:54:59.787 10586 11557 11557 D VRI[MainActivity]: vri.Setup new sync id=2 syncSeqId=0
+10-14 12:54:59.818 10586 11557 11557 D VRI[MainActivity]: vri.reportDrawFinished syncSeqId=0 android.view.ViewRootImpl.lambda$createSyncIfNeeded$4$android-view-ViewRootImpl:4081 android.view.ViewRootImpl$$ExternalSyntheticLambda2.run:6 android.os.Handler.handleCallback:942 android.os.Handler.dispatchMessage:99 android.os.Looper.loopOnce:211 
+10-14 12:54:59.821 10586 11557 11557 I wm_on_idle_called: com.zcj.qr.MainActivity
+10-14 12:54:59.859 10586 11557 11557 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+10-14 12:54:59.861 10586 11557 11557 I HandWritingStubImpl: refreshLastKeyboardType: 1
+10-14 12:54:59.861 10586 11557 11557 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-14 12:55:00.778 10586 11557 11557 I wm_on_top_resumed_lost_called: [123051417,com.zcj.qr.MainActivity,topStateChangedWhenResumed]
+10-14 12:55:00.779 10586 11557 11557 I wm_on_paused_called: [0,123051417,com.zcj.qr.MainActivity,performPause,0]
+10-14 12:55:00.815 10586 11557 11680 D ViewContentFactory: initViewContentFetcherClass
+10-14 12:55:00.815 10586 11557 11680 I ContentCatcher: ViewContentFetcher : ViewContentFetcher
+10-14 12:55:00.815 10586 11557 11680 D ViewContentFactory: createInterceptor took 0ms
+10-14 12:55:00.817 10586 11557 11557 D IS_CTS_MODE: false
+10-14 12:55:00.817 10586 11557 11557 D MULTI_WINDOW_ENABLED: false
+10-14 12:55:00.819 10586 11557 11557 D DecorView[]: getWindowModeFromSystem  windowmode is 1
+10-14 12:55:00.822 10586 11557 11680 I ContentCatcher: Interceptor : Catcher list invalid for com.zcj.qr@com.zcj.qr.ui.scan.camera.CameraScanActivity@230561246
+10-14 12:55:00.822 10586 11557 11680 I ContentCatcher: Interceptor : Get featureInfo from config image_pick_mode
+10-14 12:55:00.822 10586 11557 11680 I ContentCatcher: Interceptor : Get featureInfo from config pick_mode
+10-14 12:55:00.830 10586 11557 11557 I wm_on_create_called: [0,6223089,com.zcj.qr.ui.scan.camera.CameraScanActivity,performCreate,20]
+10-14 12:55:00.856 10586 11557 11557 D QrApp   : CameraScanFragment onViewCreated
+10-14 12:55:00.857 10586 11557 11557 D CameraPreview: resume()
+10-14 12:55:00.859 10586 11557 12498 D CameraInstance: Opening camera
+10-14 12:55:00.860 10586 11557 12498 D CameraExtStub: init android.hardware.camera2.impl.CameraExtImplXiaoMi
+10-14 12:55:00.860 10586 11557 12498 D CameraInjector: waitForResult: 
+10-14 12:55:00.861 10586 11557 12499 D CameraInjector: updateCloudCameraControllerInfoAsync: E
+10-14 12:55:00.882 10586 11557 11557 I wm_on_start_called: [0,6223089,com.zcj.qr.ui.scan.camera.CameraScanActivity,handleStartActivity,50]
+10-14 12:55:00.884 10586 11557 11557 I wm_on_resume_called: [0,6223089,com.zcj.qr.ui.scan.camera.CameraScanActivity,RESUME_ACTIVITY,1]
+10-14 12:55:00.884 10586 11557 11557 D CameraPreview: resume()
+10-14 12:55:00.884 10586 11557 11557 W CameraPreview: initCamera called twice
+10-14 12:55:00.897 10586 11557 11557 D DecorView[]: getWindowModeFromSystem  windowmode is 1
+10-14 12:55:00.897 10586 11557 11557 D DecorView[]: updateDecorCaptionStatus windowMode is 1
+10-14 12:55:00.906 10586 11557 11557 I wm_on_top_resumed_gained_called: [6223089,com.zcj.qr.ui.scan.camera.CameraScanActivity,topStateChangedWhenResumed]
+10-14 12:55:00.948 10586 11557 11557 D VRI[CameraScanActivity]: vri.reportNextDraw android.view.ViewRootImpl.performTraversals:4013 android.view.ViewRootImpl.doTraversal:2725 android.view.ViewRootImpl$TraversalRunnable.run:9812 android.view.Choreographer$CallbackRecord.run:1505 android.view.Choreographer$CallbackRecord.run:1513 
+10-14 12:55:00.948 10586 11557 11557 D VRI[CameraScanActivity]: vri.Setup new sync id=0 syncSeqId=0
+10-14 12:55:00.962 10586 11557 11663 E perf_hint: Session creation failed, mPreferredRateNanos: -1
+10-14 12:55:00.963 10586 11557 11557 D VRI[CameraScanActivity]: vri.reportDrawFinished syncSeqId=0 android.view.ViewRootImpl.lambda$createSyncIfNeeded$4$android-view-ViewRootImpl:4081 android.view.ViewRootImpl$$ExternalSyntheticLambda2.run:6 android.os.Handler.handleCallback:942 android.os.Handler.dispatchMessage:99 android.os.Looper.loopOnce:211 
+10-14 12:55:00.965 10586 11557 11557 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+10-14 12:55:00.986 10586 11557 11557 I wm_on_idle_called: com.zcj.qr.ui.scan.camera.CameraScanActivity
+10-14 12:55:01.005 10586 11557 11557 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+10-14 12:55:01.006 10586 11557 11557 I HandWritingStubImpl: refreshLastKeyboardType: 1
+10-14 12:55:01.006 10586 11557 11557 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-14 12:55:01.211 10586 11557 12498 I CameraInjector: waitForResult: time out waiting for sUpdateCloudCameraInfoLatch isInCloudCameraAuxPackageList
+10-14 12:55:01.211 10586 11557 12498 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+10-14 12:55:01.211 10586 11557 12498 W libc    : Access denied finding property "vendor.camera.aux.packagelistext"
+10-14 12:55:01.212 10586 11557 12498 D CameraInjector: updateCloudCameraControllerInfoAsync: has aleardy start update task.
+10-14 12:55:01.212 10586 11557 12498 D CameraInjector: waitForResult: 
+10-14 12:55:01.265 10586 11557 12499 D CameraInjector: updateCloudCameraControllerInfoAsync: X
+10-14 12:55:01.265 10586 11557 12498 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+10-14 12:55:01.265 10586 11557 12498 W libc    : Access denied finding property "vendor.camera.aux.packagelistext"
+10-14 12:55:01.268 10586 11557 12498 D CameraInjector: updateCloudCameraControllerInfoAsync: has aleardy start update task.
+10-14 12:55:01.268 10586 11557 12498 D CameraInjector: waitForResult: 
+10-14 12:55:01.268 10586 11557 12498 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+10-14 12:55:01.268 10586 11557 12498 W libc    : Access denied finding property "vendor.camera.aux.packagelistext"
+10-14 12:55:01.293 10586 11557 12498 D IS_CTS_MODE: false
+10-14 12:55:01.293 10586 11557 12498 D MULTI_WINDOW_SWITCH_ENABLED: false
+10-14 12:55:01.297 10586 11557 12498 I Camera  : Open camera top activityName is com.zcj.qr.ui.scan.camera.CameraScanActivity
+10-14 12:55:01.337 10586 11557 12498 D CameraInjector: updateCloudCameraControllerInfoAsync: has aleardy start update task.
+10-14 12:55:01.337 10586 11557 12498 D CameraInjector: waitForResult: 
+10-14 12:55:01.337 10586 11557 12498 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+10-14 12:55:01.337 10586 11557 12498 W libc    : Access denied finding property "vendor.camera.aux.packagelistext"
+10-14 12:55:01.339 10586 11557 12498 D CameraInjector: updateCloudCameraControllerInfoAsync: has aleardy start update task.
+10-14 12:55:01.339 10586 11557 12498 D CameraInjector: waitForResult: 
+10-14 12:55:01.339 10586 11557 12498 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+10-14 12:55:01.339 10586 11557 12498 W libc    : Access denied finding property "vendor.camera.aux.packagelistext"
+10-14 12:55:01.341 10586 11557 12498 D CameraInjector: updateCloudCameraControllerInfoAsync: has aleardy start update task.
+10-14 12:55:01.341 10586 11557 12498 D CameraInjector: waitForResult: 
+10-14 12:55:01.341 10586 11557 12498 W libc    : Access denied finding property "vendor.camera.aux.packagelist"
+10-14 12:55:01.342 10586 11557 12498 W libc    : Access denied finding property "vendor.camera.aux.packagelistext"
+10-14 12:55:01.343 10586 11557 12498 D CameraInstance: Configuring camera
+10-14 12:55:01.343 10586 11557 12498 I CameraManager: Camera Display Orientation: 90
+10-14 12:55:01.345 10586 11557 12498 I CameraManager: Initial camera parameters: preview-size=1920x1080;video-size=1920x1080;preferred-preview-size-for-video=1920x1080;preview-size-values=2560x1440,1920x1440,2340x1080,2160x1080,1920x1080,1600x1200,1440x1080,1280x960,1560x720,1440x720,1280x720,864x480,800x600,720x480,640x480,352x288,320x240,176x144;video-size-values=6016x4512,6016x3384,4512x4512,4344x4344,4208x3120,4096x2160,3840x2160,3008x2256,2592x1940,2560x1440,1940x1940,1920x1440,2340x1080,2160x1080,1920x1080,1600x1200,1440x1080,1280x960,1560x720,1440x720,1280x720,864x480,800x600,720x480,640x480,352x288,320x240,176x144;preview-format=yuv420sp;preview-format-values=yuv420p,yuv420sp,;preview-frame-rate=30;preview-fps-range=10000,30000;preview-fps-range-values=(10000,10000),(12000,12000),(15000,15000),(24000,24000),(25000,25000),(10000,30000),(12000,30000),(30000,30000);preview-frame-rate-values=10,12,15,24,25,30;picture-size=6016x4512;picture-size-values=6016x4512,6016x3384,4512x4512,4344x4344,4208x3120,4096x2160,3840x2160,3008x2256,2592x1940,2560x1440,1940x1940,1920x1440,2340x1080,2160x1080,1920x1080,1600x1200,1440x1080,1280x960,1560x720,1440x720,1280x720,864x480,800x600,720x480,640x480,352x288,320x240;picture-format=jpeg;picture-format-values=jpeg;jpeg-thumbnail-width=320;jpeg-thumbnail-height=240;jpeg-thumbnail-size-values=0x0,176x144,240x144,256x144,240x160,256x154,246x184,240x240,320x240;jpeg-thumbnail-quality=90;jpeg-quality=90;rotation=0;whitebalance=auto;whitebalance-values=auto,incandescent,fluorescent,warm-fluorescent,daylight,cloudy-daylight,twilight,shade,;effect=none;effect-values=none,mono,negative,solarize,sepia,posterize,aqua,blackboard,whiteboard;antibanding=auto;antibanding-values=off,50hz,60hz,auto;flash-mode=off;flash-mode-values=off,auto,on,torch;focus-mode=auto;focus-mode-values=infinity,auto,macro,continuous-video,continuous-picture;max-num-focus-areas=1;focus-areas=(0,0,0,0,0);focal-length=6.72;horizontal-view-angle=71.2198;vertical-view-angle=56.4843;exposure-compensation=0;max-exposure-compensation=24;min-exposure-compensation=-24;exposure-compensation-step=0.166667;auto-exposure-lock=false;auto-exposure-lock-supported=true;auto-whitebalance-lock=false;auto-whitebalance-lock-supported=true;max-num-metering-areas=1;metering-areas=(0,0,0,0,0);zoom=0;zoom-ratios=100,109,118,127,136,145,154,163,172,181,190,200,209,218,227,236,245,254,263,272,281,290,299,309,318,327,336,345,354,363,372,381,390,399,409,418,427,436,445,454,463,472,481,490,499,509,518,527,536,545,554,563,572,581,590,599,609,618,627,636,645,654,663,672,681,690,699,709,718,727,736,745,754,763,772,781,790,799,809,818,827,836,845,854,863,872,881,890,899,909,918,927,936,945,954,963,972,981,990,999;zoom-supported=true;max-zoom=99;smooth-zoom-supported=false;focus-distances=Infinity,Infinity,Infinity;max-num-detected-faces-hw=10;max-num-detected-faces-sw=0;video-frame-format=android-opaque;recording-hint=false;video-stabilization=false;video-stabilization-supported=true;video-snapshot-supported=false
+10-14 12:55:01.345 10586 11557 12498 I CameraConfiguration: Requesting focus mode value from among: [auto]
+10-14 12:55:01.345 10586 11557 12498 I CameraConfiguration: Supported focus mode values: [infinity, auto, macro, continuous-video, continuous-picture]
+10-14 12:55:01.346 10586 11557 12498 I CameraConfiguration: Can set focus mode to: auto
+10-14 12:55:01.346 10586 11557 12498 I CameraConfiguration: Focus mode already set to auto
+10-14 12:55:01.346 10586 11557 12498 I CameraConfiguration: Requesting flash mode value from among: [off]
+10-14 12:55:01.346 10586 11557 12498 I CameraConfiguration: Supported flash mode values: [off, auto, on, torch]
+10-14 12:55:01.346 10586 11557 12498 I CameraConfiguration: Can set flash mode to: off
+10-14 12:55:01.346 10586 11557 12498 I CameraConfiguration: Flash mode already set to off
+10-14 12:55:01.346 10586 11557 12498 I PreviewScalingStrategy: Viewfinder size: 2206x1080
+10-14 12:55:01.346 10586 11557 12498 I PreviewScalingStrategy: Preview in order of preference: [2160x1080, 2340x1080, 2560x1440, 1920x1080, 1440x720, 1560x720, 1920x1440, 1280x720, 1600x1200, 1440x1080, 1280x960, 864x480, 720x480, 800x600, 640x480, 320x240, 352x288, 176x144]
+10-14 12:55:01.346 10586 11557 12498 I CameraManager: Final camera parameters: video-size=1920x1080;preferred-preview-size-for-video=1920x1080;preview-size-values=2560x1440,1920x1440,2340x1080,2160x1080,1920x1080,1600x1200,1440x1080,1280x960,1560x720,1440x720,1280x720,864x480,800x600,720x480,640x480,352x288,320x240,176x144;video-size-values=6016x4512,6016x3384,4512x4512,4344x4344,4208x3120,4096x2160,3840x2160,3008x2256,2592x1940,2560x1440,1940x1940,1920x1440,2340x1080,2160x1080,1920x1080,1600x1200,1440x1080,1280x960,1560x720,1440x720,1280x720,864x480,800x600,720x480,640x480,352x288,320x240,176x144;preview-format=yuv420sp;preview-format-values=yuv420p,yuv420sp,;preview-frame-rate=30;preview-fps-range=10000,30000;preview-fps-range-values=(10000,10000),(12000,12000),(15000,15000),(24000,24000),(25000,25000),(10000,30000),(12000,30000),(30000,30000);preview-frame-rate-values=10,12,15,24,25,30;picture-size=6016x4512;picture-size-values=6016x4512,6016x3384,4512x4512,4344x4344,4208x3120,4096x2160,3840x2160,3008x2256,2592x1940,2560x1440,1940x1940,1920x1440,2340x1080,2160x1080,1920x1080,1600x1200,1440x1080,1280x960,1560x720,1440x720,1280x720,864x480,800x600,720x480,640x480,352x288,320x240;picture-format=jpeg;picture-format-values=jpeg;jpeg-thumbnail-width=320;jpeg-thumbnail-height=240;jpeg-thumbnail-size-values=0x0,176x144,240x144,256x144,240x160,256x154,246x184,240x240,320x240;jpeg-thumbnail-quality=90;jpeg-quality=90;rotation=0;whitebalance=auto;whitebalance-values=auto,incandescent,fluorescent,warm-fluorescent,daylight,cloudy-daylight,twilight,shade,;effect=none;effect-values=none,mono,negative,solarize,sepia,posterize,aqua,blackboard,whiteboard;antibanding=auto;antibanding-values=off,50hz,60hz,auto;flash-mode=off;flash-mode-values=off,auto,on,torch;focus-mode=auto;focus-mode-values=infinity,auto,macro,continuous-video,continuous-picture;max-num-focus-areas=1;focus-areas=(0,0,0,0,0);focal-length=6.72;horizontal-view-angle=71.2198;vertical-view-angle=56.4843;exposure-compensation=0;max-exposure-compensation=24;min-exposure-compensation=-24;exposure-compensation-step=0.166667;auto-exposure-lock=false;auto-exposure-lock-supported=true;auto-whitebalance-lock=false;auto-whitebalance-lock-supported=true;max-num-metering-areas=1;metering-areas=(0,0,0,0,0);zoom=0;zoom-ratios=100,109,118,127,136,145,154,163,172,181,190,200,209,218,227,236,245,254,263,272,281,290,299,309,318,327,336,345,354,363,372,381,390,399,409,418,427,436,445,454,463,472,481,490,499,509,518,527,536,545,554,563,572,581,590,599,609,618,627,636,645,654,663,672,681,690,699,709,718,727,736,745,754,763,772,781,790,799,809,818,827,836,845,854,863,872,881,890,899,909,918,927,936,945,954,963,972,981,990,999;zoom-supported=true;max-zoom=99;smooth-zoom-supported=false;focus-distances=Infinity,Infinity,Infinity;max-num-detected-faces-hw=10;max-num-detected-faces-sw=0;video-frame-format=android-opaque;recording-hint=false;video-stabilization=false;video-stabilization-supported=true;video-snapshot-supported=false;preview-size=2160x1080
+10-14 12:55:01.348 10586 11557 11557 I CenterCropStrategy: Preview: 1080x2160; Scaled: 1103x2206; Want: 1080x2206
+10-14 12:55:01.348 10586 11557 11557 I CameraPreview: Starting preview
+10-14 12:55:01.348 10586 11557 12498 D CameraInstance: Starting preview
+10-14 12:55:01.485 10586 11557 11663 D OpenGLRenderer: endAllActiveAnimators on 0xb4000075e88eb200 (CardView) with handle 0xb40000764d3e62e0
+10-14 12:55:01.498 10586 11557 11557 I wm_on_stop_called: [0,123051417,com.zcj.qr.MainActivity,STOP_ACTIVITY_ITEM,1]
+10-14 12:55:01.608 10586 11557 12498 I AutoFocusManager: Current focus mode 'auto'; use auto focus? true
+10-14 12:55:02.739 10586 11557 11572 I com.zcj.qr: This is sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:02.865 10586 11557 11572 I com.zcj.qr: This is non sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:03.328 10586 11557 11572 I com.zcj.qr: This is sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:03.728 10586 11557 11572 I com.zcj.qr: This is non sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:04.108 10586 11557 11572 I com.zcj.qr: This is sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:04.453 10586 11557 11572 I com.zcj.qr: This is non sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:04.748 10586 11557 11572 I com.zcj.qr: This is sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:05.025 10586 11557 11572 I com.zcj.qr: This is non sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:05.362 10586 11557 11572 I com.zcj.qr: This is sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:05.689 10586 11557 11572 I com.zcj.qr: This is non sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:06.040 10586 11557 11572 I com.zcj.qr: This is sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:06.372 10586 11557 11572 I com.zcj.qr: This is non sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:06.777 10586 11557 11572 I com.zcj.qr: This is sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:07.156 10586 11557 11572 I com.zcj.qr: This is non sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:07.479 10586 11557 11572 I com.zcj.qr: This is sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:07.830 10586 11557 11572 I com.zcj.qr: This is non sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:08.198 10586 11557 11572 I com.zcj.qr: This is sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:08.521 10586 11557 11572 I com.zcj.qr: This is non sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:08.902 10586 11557 11572 I com.zcj.qr: This is sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:09.247 10586 11557 11572 I com.zcj.qr: This is non sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:09.668 10586 11557 11572 I com.zcj.qr: This is sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:10.014 10586 11557 11572 I com.zcj.qr: This is non sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:10.418 10586 11557 11572 I com.zcj.qr: This is sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:10.816 10586 11557 11572 I com.zcj.qr: This is non sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 12:55:10.927 10586 11557 12581 D DecoderThread: Found barcode in 78 ms
+10-14 12:55:10.944 10586 11557 11557 D CameraPreview: pause()
+10-14 12:55:10.944 10586 11557 12498 D CameraInstance: Closing camera
+10-14 12:55:10.954 10586 11557 11557 D AndroidRuntime: Shutting down VM
+10-14 12:55:10.955 10586 11557 11557 E AndroidRuntime: FATAL EXCEPTION: main
+10-14 12:55:10.955 10586 11557 11557 E AndroidRuntime: Process: com.zcj.qr, PID: 11557
+10-14 12:55:10.955 10586 11557 11557 E AndroidRuntime: java.lang.IllegalStateException: View androidx.constraintlayout.widget.ConstraintLayout{b4058aa V.E...... ........ 0,0-1080,2206} does not have a NavController set
+10-14 12:55:10.955 10586 11557 11557 E AndroidRuntime: 	at androidx.navigation.Navigation.findNavController(Navigation.kt:71)
+10-14 12:55:10.955 10586 11557 11557 E AndroidRuntime: 	at androidx.navigation.fragment.NavHostFragment$Companion.findNavController(NavHostFragment.kt:364)
+10-14 12:55:10.955 10586 11557 11557 E AndroidRuntime: 	at androidx.navigation.fragment.FragmentKt.findNavController(Fragment.kt:29)
+10-14 12:55:10.955 10586 11557 11557 E AndroidRuntime: 	at com.zcj.qr.ui.scan.camera.CameraScanFragment$setupBarcodeScanner$1.barcodeResult(CameraScanFragment.kt:52)
+10-14 12:55:10.955 10586 11557 11557 E AndroidRuntime: 	at com.journeyapps.barcodescanner.DecoratedBarcodeView$WrappedCallback.barcodeResult(DecoratedBarcodeView.java:50)
+10-14 12:55:10.955 10586 11557 11557 E AndroidRuntime: 	at com.journeyapps.barcodescanner.BarcodeView$1.handleMessage(BarcodeView.java:52)
+10-14 12:55:10.955 10586 11557 11557 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-14 12:55:10.955 10586 11557 11557 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:211)
+10-14 12:55:10.955 10586 11557 11557 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:300)
+10-14 12:55:10.955 10586 11557 11557 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8503)
+10-14 12:55:10.955 10586 11557 11557 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-14 12:55:10.955 10586 11557 11557 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:561)
+10-14 12:55:10.955 10586 11557 11557 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:954)
+10-14 12:55:10.955 10586 11557 11557 E QrApp   : FATAL CRASH: java.lang.IllegalStateException: View androidx.constraintlayout.widget.ConstraintLayout{b4058aa V.E...... ........ 0,0-1080,2206} does not have a NavController set
+10-14 12:55:10.955 10586 11557 11557 E QrApp   : java.lang.IllegalStateException: View androidx.constraintlayout.widget.ConstraintLayout{b4058aa V.E...... ........ 0,0-1080,2206} does not have a NavController set
+10-14 12:55:10.955 10586 11557 11557 E QrApp   : 	at androidx.navigation.Navigation.findNavController(Navigation.kt:71)
+10-14 12:55:10.955 10586 11557 11557 E QrApp   : 	at androidx.navigation.fragment.NavHostFragment$Companion.findNavController(NavHostFragment.kt:364)
+10-14 12:55:10.955 10586 11557 11557 E QrApp   : 	at androidx.navigation.fragment.FragmentKt.findNavController(Fragment.kt:29)
+10-14 12:55:10.955 10586 11557 11557 E QrApp   : 	at com.zcj.qr.ui.scan.camera.CameraScanFragment$setupBarcodeScanner$1.barcodeResult(CameraScanFragment.kt:52)
+10-14 12:55:10.955 10586 11557 11557 E QrApp   : 	at com.journeyapps.barcodescanner.DecoratedBarcodeView$WrappedCallback.barcodeResult(DecoratedBarcodeView.java:50)
+10-14 12:55:10.955 10586 11557 11557 E QrApp   : 	at com.journeyapps.barcodescanner.BarcodeView$1.handleMessage(BarcodeView.java:52)
+10-14 12:55:10.955 10586 11557 11557 E QrApp   : 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-14 12:55:10.955 10586 11557 11557 E QrApp   : 	at android.os.Looper.loopOnce(Looper.java:211)
+10-14 12:55:10.955 10586 11557 11557 E QrApp   : 	at android.os.Looper.loop(Looper.java:300)
+10-14 12:55:10.955 10586 11557 11557 E QrApp   : 	at android.app.ActivityThread.main(ActivityThread.java:8503)
+10-14 12:55:10.955 10586 11557 11557 E QrApp   : 	at java.lang.reflect.Method.invoke(Native Method)
+10-14 12:55:10.955 10586 11557 11557 E QrApp   : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:561)
+10-14 12:55:10.955 10586 11557 11557 E QrApp   : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:954)
+10-14 12:55:10.955 10586 11557 11557 W System.err: java.lang.IllegalStateException: View androidx.constraintlayout.widget.ConstraintLayout{b4058aa V.E...... ........ 0,0-1080,2206} does not have a NavController set
+10-14 12:55:10.955 10586 11557 11557 W System.err: 	at androidx.navigation.Navigation.findNavController(Navigation.kt:71)
+10-14 12:55:10.955 10586 11557 11557 W System.err: 	at androidx.navigation.fragment.NavHostFragment$Companion.findNavController(NavHostFragment.kt:364)
+10-14 12:55:10.955 10586 11557 11557 W System.err: 	at androidx.navigation.fragment.FragmentKt.findNavController(Fragment.kt:29)
+10-14 12:55:10.955 10586 11557 11557 W System.err: 	at com.zcj.qr.ui.scan.camera.CameraScanFragment$setupBarcodeScanner$1.barcodeResult(CameraScanFragment.kt:52)
+10-14 12:55:10.955 10586 11557 11557 W System.err: 	at com.journeyapps.barcodescanner.DecoratedBarcodeView$WrappedCallback.barcodeResult(DecoratedBarcodeView.java:50)
+10-14 12:55:10.955 10586 11557 11557 W System.err: 	at com.journeyapps.barcodescanner.BarcodeView$1.handleMessage(BarcodeView.java:52)
+10-14 12:55:10.955 10586 11557 11557 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-14 12:55:10.955 10586 11557 11557 W System.err: 	at android.os.Looper.loopOnce(Looper.java:211)
+10-14 12:55:10.955 10586 11557 11557 W System.err: 	at android.os.Looper.loop(Looper.java:300)
+10-14 12:55:10.955 10586 11557 11557 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:8503)
+10-14 12:55:10.955 10586 11557 11557 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+10-14 12:55:10.955 10586 11557 11557 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:561)
+10-14 12:55:10.955 10586 11557 11557 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:954)
+10-14 12:55:13.492 10586 11557 12769 W com.zcj.qr: No such thread for suspend: 0x764be4d738:main
+10-14 12:55:13.552 10586 11557 11568 I com.zcj.qr: Thread[5,tid=11568,WaitingInMainSignalCatcherLoop,Thread*=0xb40000763e38c000,peer=0x13ec0ef8,"Signal Catcher"]: reacting to signal 3
+10-14 12:55:13.552 10586 11557 11568 I com.zcj.qr: 
+10-14 12:55:13.634 10586 11557 11568 I com.zcj.qr: Wrote stack traces to tombstoned
+10-14 12:55:15.950 10586 11557 12794 W com.zcj.qr: No such thread for suspend: 0x764be4d738:main
+10-14 12:55:16.012 10586 11557 11568 I com.zcj.qr: Thread[5,tid=11568,WaitingInMainSignalCatcherLoop,Thread*=0xb40000763e38c000,peer=0x13ec0ef8,"Signal Catcher"]: reacting to signal 3
+10-14 12:55:16.012 10586 11557 11568 I com.zcj.qr: 
+10-14 12:55:16.079 10586 11557 11568 I com.zcj.qr: Wrote stack traces to tombstoned
+10-14 12:55:31.174 10586 11557 11737 W MIUIScout ANR: Print Message Id: 0 MessageInfo: { when=-20s246ms what=2131296869 obj=[(857.0,1079.0), (857.0,1079.0), (857.0,1079.0), (239.5,737.5), (866.0,743.0), (246.5,1366.0), (808.5,1328.5)] target=android.os.Handler }
+10-14 12:55:31.174 10586 11557 11737 W MIUIScout ANR: Print Message Id: 1 MessageInfo: { when=-20s246ms callback=com.journeyapps.barcodescanner.camera.CameraInstance$$ExternalSyntheticLambda3 target=android.os.Handler }
+10-14 12:55:31.174 10586 11557 11737 W MIUIScout ANR: Print Message Id: 2 MessageInfo: { when=-20s234ms callback=android.graphics.HardwareRendererObserver$$ExternalSyntheticLambda0 target=android.view.ViewRootImpl$ViewRootHandler }
+10-14 12:55:31.174 10586 11557 11737 W MIUIScout ANR: Print Message Id: 3 MessageInfo: { when=-20s156ms what=2 obj=android.view.View$AttachInfo$InvalidateInfo@4ce27f3 target=android.view.ViewRootImpl$ViewRootHandler }
+10-14 12:55:31.174 10586 11557 11737 W MIUIScout ANR: Print Message Id: 4 MessageInfo: { when=-20s89ms what=2131296864 target=android.os.Handler }
+10-14 12:55:31.174 10586 11557 11737 W MIUIScout ANR: (Print messages: 5, polling=false, quitting=false)
+10-14 12:55:32.284 10586 11557 11568 I com.zcj.qr: Thread[5,tid=11568,WaitingInMainSignalCatcherLoop,Thread*=0xb40000763e38c000,peer=0x13ec0ef8,"Signal Catcher"]: reacting to signal 3
+10-14 12:55:32.284 10586 11557 11568 I com.zcj.qr: 
+10-14 12:55:32.351 10586 11557 11568 I com.zcj.qr: Wrote stack traces to tombstoned
+10-14 12:55:55.026 10586 13335 13335 I com.zcj.qr: Late-enabling -Xcheck:jni
+10-14 12:55:55.114 10586 13335 13335 W System.err: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-14 12:55:55.114 10586 13335 13335 W System.err: 	at libcore.io.Linux.open(Native Method)
+10-14 12:55:55.114 10586 13335 13335 W System.err: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-14 12:55:55.114 10586 13335 13335 W System.err: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-14 12:55:55.114 10586 13335 13335 W System.err: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-14 12:55:55.114 10586 13335 13335 W System.err: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8381)
+10-14 12:55:55.114 10586 13335 13335 W System.err: 	at android.system.Os.open(Os.java:494)
+10-14 12:55:55.114 10586 13335 13335 W System.err: 	at android.os.perfdebug.PerfDebugMonitorImpl.monitorVersionControl(PerfDebugMonitorImpl.java:206)
+10-14 12:55:55.115 10586 13335 13335 W System.err: 	at android.os.perfdebug.PerfDebugMonitorImpl.prepareMonitor(PerfDebugMonitorImpl.java:187)
+10-14 12:55:55.115 10586 13335 13335 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:8468)
+10-14 12:55:55.115 10586 13335 13335 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+10-14 12:55:55.115 10586 13335 13335 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:561)
+10-14 12:55:55.115 10586 13335 13335 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:954)
+10-14 12:55:55.115 10586 13335 13335 I MessageMonitor: Load libmiui_runtime
+10-14 12:55:55.141 10586 13335 13349 D AppScoutStateMachine: 13335-ScoutStateMachinecreated
+10-14 12:55:55.152 10586 13335 13335 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10586; state: ENABLED
+10-14 12:55:55.176 10586 13335 13335 W ziparchive: Unable to open '/data/app/~~xs_PgP62oNplxqphn6kBEw==/com.zcj.qr-WjP-ISRGKpfRS7k3P1a8nA==/base.dm': No such file or directory
+10-14 12:55:55.176 10586 13335 13335 W ziparchive: Unable to open '/data/app/~~xs_PgP62oNplxqphn6kBEw==/com.zcj.qr-WjP-ISRGKpfRS7k3P1a8nA==/base.dm': No such file or directory
+10-14 12:55:55.387 10586 13335 13335 I Perf    : Connecting to perf service.
+10-14 12:55:55.397 10586 13335 13335 V GraphicsEnvironment: ANGLE Developer option for 'com.zcj.qr' set to: 'default'
+10-14 12:55:55.397 10586 13335 13335 V GraphicsEnvironment: ANGLE GameManagerService for com.zcj.qr: false
+10-14 12:55:55.397 10586 13335 13335 V GraphicsEnvironment: App is not on the allowlist for updatable production driver.
+10-14 12:55:55.401 10586 13335 13335 I ForceDarkHelperStubImpl: initialize for com.zcj.qr , ForceDarkOrigin
+10-14 12:55:55.402 10586 13335 13335 D com.zcj.qr: JNI_OnLoad success
+10-14 12:55:55.402 10586 13335 13335 I MiuiForceDarkConfig: setConfig density:2.750000, mainRule:0, secondaryRule:0, tertiaryRule:0
+10-14 12:55:55.404 10586 13335 13335 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-14 12:55:55.404 10586 13335 13335 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-14 12:55:55.472 10586 13335 13335 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+10-14 12:55:55.524 10586 13335 13335 W libc    : Access denied finding property "ro.vendor.df.effect.conflict"
+10-14 12:55:55.571 10586 13335 13367 D ViewContentFactory: initViewContentFetcherClass
+10-14 12:55:55.571 10586 13335 13367 D ViewContentFactory: getInterceptorPackageInfo
+10-14 12:55:55.571 10586 13335 13367 D ViewContentFactory: getInitialApplication took 0ms
+10-14 12:55:55.571 10586 13335 13367 D ViewContentFactory: packageInfo.packageName: com.miui.catcherpatch
+10-14 12:55:55.577 10586 13335 13335 D ScrollerOptimizationManager: registerConfigChangedListener
+10-14 12:55:55.581 10586 13335 13367 D ViewContentFactory: initViewContentFetcherClass took 11ms
+10-14 12:55:55.582 10586 13335 13367 I ContentCatcher: ViewContentFetcher : ViewContentFetcher
+10-14 12:55:55.582 10586 13335 13367 D ViewContentFactory: createInterceptor took 11ms
+10-14 12:55:55.585 10586 13335 13367 I ContentCatcher: Interceptor : Catcher list invalid for com.zcj.qr@com.zcj.qr.MainActivity@91294690
+10-14 12:55:55.585 10586 13335 13367 I ContentCatcher: Interceptor : Get featureInfo from config image_pick_mode
+10-14 12:55:55.586 10586 13335 13367 I ContentCatcher: Interceptor : Get featureInfo from config pick_mode
+10-14 12:55:55.597 10586 13335 13335 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10586; state: ENABLED
+10-14 12:55:55.598 10586 13335 13335 D ScrollerOptimizationManager: registerConfigChangedListener
+10-14 12:55:55.614 10586 13335 13335 D IS_CTS_MODE: false
+10-14 12:55:55.614 10586 13335 13335 D MULTI_WINDOW_ENABLED: false
+10-14 12:55:55.617 10586 13335 13335 D DecorView[]: getWindowModeFromSystem  windowmode is 1
+10-14 12:55:55.624 10586 13335 13335 W com.zcj.qr: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+10-14 12:55:55.624 10586 13335 13335 W com.zcj.qr: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+10-14 12:55:55.637 10586 13335 13335 D CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10586; state: ENABLED
+10-14 12:55:55.676 10586 13335 13335 I wm_on_create_called: [0,123051417,com.zcj.qr.MainActivity,performCreate,195]
+10-14 12:55:55.758 10586 13335 13335 I wm_on_start_called: [0,123051417,com.zcj.qr.MainActivity,handleStartActivity,80]
+10-14 12:55:55.769 10586 13335 13335 I wm_on_resume_called: [0,123051417,com.zcj.qr.MainActivity,RESUME_ACTIVITY,8]
+10-14 12:55:55.795 10586 13335 13335 D DecorView[]: getWindowModeFromSystem  windowmode is 1
+10-14 12:55:55.795 10586 13335 13335 D DecorView[]: updateDecorCaptionStatus windowMode is 1
+10-14 12:55:55.809 10586 13335 13335 I wm_on_top_resumed_gained_called: [123051417,com.zcj.qr.MainActivity,topStateChangedWhenResumed]
+10-14 12:55:55.851 10586 13335 13364 I AdrenoGLES-0: QUALCOMM build                   : db3d445dbc, Ia06b22fa1a
+10-14 12:55:55.851 10586 13335 13364 I AdrenoGLES-0: Build Date                       : 10/04/21
+10-14 12:55:55.851 10586 13335 13364 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.32.02.16
+10-14 12:55:55.851 10586 13335 13364 I AdrenoGLES-0: Local Branch                     : 
+10-14 12:55:55.851 10586 13335 13364 I AdrenoGLES-0: Remote Branch                    : 
+10-14 12:55:55.851 10586 13335 13364 I AdrenoGLES-0: Remote Branch                    : 
+10-14 12:55:55.851 10586 13335 13364 I AdrenoGLES-0: Reconstruct Branch               : 
+10-14 12:55:55.851 10586 13335 13364 I AdrenoGLES-0: Build Config                     : S P 10.0.7 AArch64
+10-14 12:55:55.851 10586 13335 13364 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+10-14 12:55:55.860 10586 13335 13364 I AdrenoGLES-0: PFP: 0x016dd093, ME: 0x00000000
+10-14 12:55:55.869 10586 13335 13335 D VRI[MainActivity]: vri.reportNextDraw android.view.ViewRootImpl.performTraversals:4013 android.view.ViewRootImpl.doTraversal:2725 android.view.ViewRootImpl$TraversalRunnable.run:9812 android.view.Choreographer$CallbackRecord.run:1505 android.view.Choreographer$CallbackRecord.run:1513 
+10-14 12:55:55.869 10586 13335 13335 D VRI[MainActivity]: vri.Setup new sync id=0 syncSeqId=0
+10-14 12:55:55.893 10586 13335 13364 W libc    : Access denied finding property "vendor.migl.debug"
+10-14 12:55:55.899 10586 13335 13364 E libEGL  : pre_cache appList: ,,,
+10-14 12:55:55.919 10586 13335 13364 D com.zcj.qr: MiuiProcessManagerServiceStub setSchedFifo
+10-14 12:55:55.919 10586 13335 13364 I MiuiProcessManagerImpl: setSchedFifo pid:13335, mode:3
+10-14 12:55:55.923 10586 13335 13364 E libboost: fail to open node: No such file or directory
+10-14 12:55:55.940 10586 13335 13364 E perf_hint: Session creation failed, mPreferredRateNanos: -1
+10-14 12:55:55.942 10586 13335 13335 D VRI[MainActivity]: vri.reportDrawFinished syncSeqId=0 android.view.ViewRootImpl.lambda$createSyncIfNeeded$4$android-view-ViewRootImpl:4081 android.view.ViewRootImpl$$ExternalSyntheticLambda2.run:6 android.os.Handler.handleCallback:942 android.os.Handler.dispatchMessage:99 android.os.Looper.loopOnce:211 
+10-14 12:55:55.951 10586 13335 13335 I wm_on_idle_called: com.zcj.qr.MainActivity
+10-14 12:55:55.970 10586 13335 13335 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+10-14 12:55:55.971 10586 13335 13335 I HandWritingStubImpl: refreshLastKeyboardType: 1
+10-14 12:55:55.972 10586 13335 13335 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-14 12:55:55.990 10586 13335 13335 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-14 12:55:56.009 10586 13335 13335 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-14 12:55:57.257 10586 13335 13335 D MIUIInput: [KeyEvent] ViewRootImpl windowName 'com.zcj.qr/com.zcj.qr.MainActivity', KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x48, repeatCount=0, eventTime=659711437000000, downTime=659711437000000, deviceId=-1, source=0x101, displayId=-1 }, phoneEventTime=12:55:57.246
+10-14 12:55:57.258 10586 13335 13335 D MIUIInput: [KeyEvent] ViewRootImpl windowName 'com.zcj.qr/com.zcj.qr.MainActivity', KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x48, repeatCount=0, eventTime=659711448000000, downTime=659711448000000, deviceId=-1, source=0x101, displayId=-1 }, phoneEventTime=12:55:57.257
+10-14 12:55:57.268 10586 13335 13335 I wm_on_top_resumed_lost_called: [123051417,com.zcj.qr.MainActivity,topStateChangedWhenResumed]
+10-14 12:55:57.282 10586 13335 13335 I wm_on_paused_called: [0,123051417,com.zcj.qr.MainActivity,performPause,2]
+10-14 12:55:57.309 10586 13335 13335 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+10-14 12:55:57.877 10586 13335 13335 I wm_on_stop_called: [0,123051417,com.zcj.qr.MainActivity,STOP_ACTIVITY_ITEM,1]
+10-14 12:56:01.456 10586 13335 13496 D ProfileInstaller: Installing profile for com.zcj.qr

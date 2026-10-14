@@ -36,13 +36,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        applyAutoTheme()
-        super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        setupTabs()
-        checkPermissions()
+        try {
+            applyAutoTheme()
+            super.onCreate(savedInstanceState)
+            binding = ActivityMainBinding.inflate(layoutInflater)
+            setContentView(binding.root)
+            setupTabs()
+            checkPermissions()
+        } catch (e: Exception) {
+            android.util.Log.e("QrApp", "MainActivity onCreate crash: " + e.toString(), e)
+            e.printStackTrace()
+            finishAffinity()
+        }
     }
 
     private fun applyAutoTheme() {

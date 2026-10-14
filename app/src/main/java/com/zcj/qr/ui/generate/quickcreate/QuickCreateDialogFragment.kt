@@ -53,9 +53,10 @@ class QuickCreateDialogFragment : DialogFragment() {
                 }
                 val wifiStr = buildWifiString(ssid, password, encryption)
                 setFragmentResult(RESULT_KEY, Bundle().also { 
-            it.putString("content", wifiStr)
-            it.putString("type", "wifi")
-        })
+                    it.putString("content", wifiStr)
+                    it.putString("type", "wifi")
+                })
+                dismiss()
             }
             .setNegativeButton("取消", null)
             .create()
@@ -73,9 +74,10 @@ class QuickCreateDialogFragment : DialogFragment() {
                     binding.etEmail.text?.toString() ?: ""
                 )
                 setFragmentResult(RESULT_KEY, Bundle().also { 
-            it.putString("content", vcard)
-            it.putString("type", "contact")
-        })
+                    it.putString("content", vcard)
+                    it.putString("type", "contact")
+                })
+                dismiss()
             }
             .setNegativeButton("取消", null)
             .create()
@@ -89,9 +91,10 @@ class QuickCreateDialogFragment : DialogFragment() {
             .setPositiveButton("生成") { _, _ ->
                 val url = binding.etUrl.text?.toString()?.trim() ?: ""
                 setFragmentResult(RESULT_KEY, Bundle().also { 
-            it.putString("content", url)
-            it.putString("type", "url")
-        })
+                    it.putString("content", url)
+                    it.putString("type", "url")
+                })
+                dismiss()
             }
             .setNegativeButton("取消", null)
             .create()
@@ -105,9 +108,10 @@ class QuickCreateDialogFragment : DialogFragment() {
             .setPositiveButton("生成") { _, _ ->
                 val phone = binding.etPhone.text?.toString()?.trim() ?: ""
                 setFragmentResult(RESULT_KEY, Bundle().also { 
-            it.putString("content", "tel:$phone")
-            it.putString("type", "phone")
-        })
+                    it.putString("content", "tel:$phone")
+                    it.putString("type", "phone")
+                })
+                dismiss()
             }
             .setNegativeButton("取消", null)
             .create()
@@ -122,9 +126,10 @@ class QuickCreateDialogFragment : DialogFragment() {
                 val phone = binding.etPhone.text?.toString()?.trim() ?: ""
                 val message = binding.etMessage.text?.toString()?.trim() ?: ""
                 setFragmentResult(RESULT_KEY, Bundle().also { 
-            it.putString("content", "smsto:$phone:$message")
-            it.putString("type", "sms")
-        })
+                    it.putString("content", "smsto:$phone:$message")
+                    it.putString("type", "sms")
+                })
+                dismiss()
             }
             .setNegativeButton("取消", null)
             .create()
@@ -140,9 +145,10 @@ class QuickCreateDialogFragment : DialogFragment() {
                 val subject = binding.etSubject.text?.toString()?.trim() ?: ""
                 val body = binding.etBody.text?.toString()?.trim() ?: ""
                 setFragmentResult(RESULT_KEY, Bundle().also { 
-            it.putString("content", "mailto:$email?subject=$subject&body=$body")
-            it.putString("type", "email")
-        })
+                    it.putString("content", "mailto:$email?subject=$subject&body=$body")
+                    it.putString("type", "email")
+                })
+                dismiss()
             }
             .setNegativeButton("取消", null)
             .create()

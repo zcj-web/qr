@@ -8,7 +8,7 @@ import com.zcj.qr.data.model.ScanHistoryEntity
 import com.zcj.qr.data.model.GenerateHistoryEntity
 import kotlinx.coroutines.flow.Flow
 
-@Database(entities = [ScanHistoryEntity::class, GenerateHistoryEntity::class], version = 1, exportSchema = false)
+@Database(entities = [ScanHistoryEntity::class, GenerateHistoryEntity::class], version = 5, exportSchema = false)
 abstract class QrDatabase : RoomDatabase() {
     abstract fun scanHistoryDao(): ScanHistoryDao
     abstract fun generateHistoryDao(): GenerateHistoryDao
@@ -18,15 +18,19 @@ abstract class QrDatabase : RoomDatabase() {
         private var INSTANCE: QrDatabase? = null
 
         fun getDatabase(context: Context): QrDatabase {
-            return INSTANCE ?: synchronized(this) {
-                val instance = Room.databaseBuilder(
-                    context.applicationContext,
-                    QrDatabase::class.java,
-                    "qr_database"
-                ).build()
-                INSTANCE = instance
-                instance
+            synchronized(this) {
+                if (INSTANCE != null) return INSTANCE!!
             }
+            val instance = Room.databaseBuilder(
+                context.applicationContext,
+                QrDatabase::class.java,
+                "qr_database"
+            ).fallbackToDestructiveMigration()
+            .build()
+            synchronized(this) {
+                if (INSTANCE == null) INSTANCE = instance
+            }
+            return INSTANCE!!
         }
     }
 }

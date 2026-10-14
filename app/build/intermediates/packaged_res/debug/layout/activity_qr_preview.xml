@@ -22,8 +22,9 @@
             android:textColor="?attr/colorOnSurface" />
 
         <FrameLayout
-            android:layout_width="280dp"
-            android:layout_height="280dp"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginHorizontal="16dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/glass_card_day">
 
@@ -38,7 +39,7 @@
                 android:id="@+id/ivQr"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:scaleType="centerInside"
+                android:scaleType="fitCenter"
                 android:visibility="gone"
                 android:contentDescription="二维码" />
         </FrameLayout>
@@ -70,6 +71,15 @@
                 android:text="保存到相册"
                 android:textAllCaps="false"
                 android:backgroundTint="?attr/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tvError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#FF5722"
+                android:visibility="gone"
+                android:textAlignment="center" />
 
             <Button
                 android:id="@+id/btnShare"

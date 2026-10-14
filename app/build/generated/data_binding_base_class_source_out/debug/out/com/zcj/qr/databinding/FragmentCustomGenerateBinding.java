@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.Spinner;
@@ -32,10 +33,16 @@ public final class FragmentCustomGenerateBinding implements ViewBinding {
   public final Button btnGenerate;
 
   @NonNull
+  public final ImageButton btnRemoveLogo;
+
+  @NonNull
   public final TextInputEditText etContent;
 
   @NonNull
   public final TextInputEditText etPassword;
+
+  @NonNull
+  public final ImageView ivLogoPreview;
 
   @NonNull
   public final ImageView ivQr;
@@ -52,21 +59,37 @@ public final class FragmentCustomGenerateBinding implements ViewBinding {
   @NonNull
   public final TextView tvError;
 
+  @NonNull
+  public final TextView tvLogoHint;
+
+  @NonNull
+  public final View vBgColor;
+
+  @NonNull
+  public final View vDotColor;
+
   private FragmentCustomGenerateBinding(@NonNull ScrollView rootView, @NonNull Button btnBack,
-      @NonNull Button btnGenerate, @NonNull TextInputEditText etContent,
-      @NonNull TextInputEditText etPassword, @NonNull ImageView ivQr,
+      @NonNull Button btnGenerate, @NonNull ImageButton btnRemoveLogo,
+      @NonNull TextInputEditText etContent, @NonNull TextInputEditText etPassword,
+      @NonNull ImageView ivLogoPreview, @NonNull ImageView ivQr,
       @NonNull TextInputLayout layoutPassword, @NonNull Spinner spinnerIterations,
-      @NonNull SwitchMaterial switchEncrypt, @NonNull TextView tvError) {
+      @NonNull SwitchMaterial switchEncrypt, @NonNull TextView tvError,
+      @NonNull TextView tvLogoHint, @NonNull View vBgColor, @NonNull View vDotColor) {
     this.rootView = rootView;
     this.btnBack = btnBack;
     this.btnGenerate = btnGenerate;
+    this.btnRemoveLogo = btnRemoveLogo;
     this.etContent = etContent;
     this.etPassword = etPassword;
+    this.ivLogoPreview = ivLogoPreview;
     this.ivQr = ivQr;
     this.layoutPassword = layoutPassword;
     this.spinnerIterations = spinnerIterations;
     this.switchEncrypt = switchEncrypt;
     this.tvError = tvError;
+    this.tvLogoHint = tvLogoHint;
+    this.vBgColor = vBgColor;
+    this.vDotColor = vDotColor;
   }
 
   @Override
@@ -108,6 +131,12 @@ public final class FragmentCustomGenerateBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnRemoveLogo;
+      ImageButton btnRemoveLogo = ViewBindings.findChildViewById(rootView, id);
+      if (btnRemoveLogo == null) {
+        break missingId;
+      }
+
       id = R.id.etContent;
       TextInputEditText etContent = ViewBindings.findChildViewById(rootView, id);
       if (etContent == null) {
@@ -117,6 +146,12 @@ public final class FragmentCustomGenerateBinding implements ViewBinding {
       id = R.id.etPassword;
       TextInputEditText etPassword = ViewBindings.findChildViewById(rootView, id);
       if (etPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.ivLogoPreview;
+      ImageView ivLogoPreview = ViewBindings.findChildViewById(rootView, id);
+      if (ivLogoPreview == null) {
         break missingId;
       }
 
@@ -150,8 +185,27 @@ public final class FragmentCustomGenerateBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvLogoHint;
+      TextView tvLogoHint = ViewBindings.findChildViewById(rootView, id);
+      if (tvLogoHint == null) {
+        break missingId;
+      }
+
+      id = R.id.vBgColor;
+      View vBgColor = ViewBindings.findChildViewById(rootView, id);
+      if (vBgColor == null) {
+        break missingId;
+      }
+
+      id = R.id.vDotColor;
+      View vDotColor = ViewBindings.findChildViewById(rootView, id);
+      if (vDotColor == null) {
+        break missingId;
+      }
+
       return new FragmentCustomGenerateBinding((ScrollView) rootView, btnBack, btnGenerate,
-          etContent, etPassword, ivQr, layoutPassword, spinnerIterations, switchEncrypt, tvError);
+          btnRemoveLogo, etContent, etPassword, ivLogoPreview, ivQr, layoutPassword,
+          spinnerIterations, switchEncrypt, tvError, tvLogoHint, vBgColor, vDotColor);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

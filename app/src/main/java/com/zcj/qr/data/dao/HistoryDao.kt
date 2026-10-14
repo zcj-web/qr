@@ -13,6 +13,9 @@ interface ScanHistoryDao {
     @Query("SELECT * FROM scan_history ORDER BY timestamp DESC LIMIT :limit")
     fun getLatest(limit: Int): Flow<List<ScanHistoryEntity>>
 
+    @Query("SELECT COUNT(*) > 0 FROM scan_history WHERE content = :content")
+    suspend fun exists(content: String): Boolean
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(entity: ScanHistoryEntity): Long
 
@@ -30,6 +33,15 @@ interface GenerateHistoryDao {
 
     @Query("SELECT * FROM generate_history ORDER BY timestamp DESC LIMIT :limit")
     fun getLatest(limit: Int): Flow<List<GenerateHistoryEntity>>
+
+    @Query("SELECT COUNT(*) > 0 FROM generate_history WHERE content = :content")
+    suspend fun exists(content: String): Boolean
+
+    @Query("SELECT id FROM generate_history WHERE content = :content LIMIT 1")
+    suspend fun getIdForContent(content: String): Long?
+
+    @Query("UPDATE generate_history SET type = :type, timestamp = :timestamp, hasEncryption = :hasEncryption, styleJson = :styleJson, logoFilePath = :logoFilePath WHERE id = :id")
+    suspend fun update(id: Long, type: String, timestamp: Long, hasEncryption: Boolean, styleJson: String?, logoFilePath: String?)
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(entity: GenerateHistoryEntity): Long

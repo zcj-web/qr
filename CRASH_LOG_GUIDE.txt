@@ -1,0 +1,24 @@
+# 崩溃日志捕获方法
+
+请在设备上运行以下命令获取崩溃日志：
+
+方式1：使用ADB（推荐）
+```
+adb logcat -d | grep -i "crash\|fatal\|exception\|com.zcj.qr"
+```
+
+方式2：在手机上用MatLog查看
+- 打开MatLog应用
+- 点击过滤设置
+- 添加包名过滤：com.zcj.qr
+- 重新打开二维码App触发崩溃
+- 保存日志发给我
+
+方式3：在终端运行
+```
+logcat | grep -E "AndroidRuntime|com.zcj.qr|FATAL"
+```
+
+关键信息需要：
+- Exception类型（NullPointerException / NoClassDefFoundError等）
+- 崩溃堆栈（哪一行代码触发的）

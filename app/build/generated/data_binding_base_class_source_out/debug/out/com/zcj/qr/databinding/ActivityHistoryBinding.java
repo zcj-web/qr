@@ -4,14 +4,16 @@ package com.zcj.qr.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.google.android.material.appbar.MaterialToolbar;
 import com.zcj.qr.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -22,20 +24,29 @@ public final class ActivityHistoryBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final ImageButton btnClearAll;
+
+  @NonNull
   public final ProgressBar progressBar;
 
   @NonNull
   public final RecyclerView rvHistory;
 
   @NonNull
-  public final MaterialToolbar toolbar;
+  public final Toolbar toolbar;
 
-  private ActivityHistoryBinding(@NonNull LinearLayout rootView, @NonNull ProgressBar progressBar,
-      @NonNull RecyclerView rvHistory, @NonNull MaterialToolbar toolbar) {
+  @NonNull
+  public final TextView tvEmpty;
+
+  private ActivityHistoryBinding(@NonNull LinearLayout rootView, @NonNull ImageButton btnClearAll,
+      @NonNull ProgressBar progressBar, @NonNull RecyclerView rvHistory, @NonNull Toolbar toolbar,
+      @NonNull TextView tvEmpty) {
     this.rootView = rootView;
+    this.btnClearAll = btnClearAll;
     this.progressBar = progressBar;
     this.rvHistory = rvHistory;
     this.toolbar = toolbar;
+    this.tvEmpty = tvEmpty;
   }
 
   @Override
@@ -65,6 +76,12 @@ public final class ActivityHistoryBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnClearAll;
+      ImageButton btnClearAll = ViewBindings.findChildViewById(rootView, id);
+      if (btnClearAll == null) {
+        break missingId;
+      }
+
       id = R.id.progressBar;
       ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
       if (progressBar == null) {
@@ -78,12 +95,19 @@ public final class ActivityHistoryBinding implements ViewBinding {
       }
 
       id = R.id.toolbar;
-      MaterialToolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
         break missingId;
       }
 
-      return new ActivityHistoryBinding((LinearLayout) rootView, progressBar, rvHistory, toolbar);
+      id = R.id.tvEmpty;
+      TextView tvEmpty = ViewBindings.findChildViewById(rootView, id);
+      if (tvEmpty == null) {
+        break missingId;
+      }
+
+      return new ActivityHistoryBinding((LinearLayout) rootView, btnClearAll, progressBar,
+          rvHistory, toolbar, tvEmpty);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

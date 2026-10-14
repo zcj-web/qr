@@ -1,0 +1,257 @@
+# LogSleuth session (snapshot)
+# saved: 2026-10-14T00:28:22.909540Z
+# device: Xiaomi Mi 10
+# android: 13 (SDK 33)
+# access: READ_LOGS
+10-14 08:27:45.087 10559 14439 14439 I com.zcj.qr: Late-enabling -Xcheck:jni
+10-14 08:27:45.120 10559 14439 14439 W System.err: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-14 08:27:45.120 10559 14439 14439 W System.err: 	at libcore.io.Linux.open(Native Method)
+10-14 08:27:45.120 10559 14439 14439 W System.err: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-14 08:27:45.120 10559 14439 14439 W System.err: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-14 08:27:45.120 10559 14439 14439 W System.err: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-14 08:27:45.120 10559 14439 14439 W System.err: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8381)
+10-14 08:27:45.120 10559 14439 14439 W System.err: 	at android.system.Os.open(Os.java:494)
+10-14 08:27:45.120 10559 14439 14439 W System.err: 	at android.os.perfdebug.PerfDebugMonitorImpl.monitorVersionControl(PerfDebugMonitorImpl.java:206)
+10-14 08:27:45.120 10559 14439 14439 W System.err: 	at android.os.perfdebug.PerfDebugMonitorImpl.prepareMonitor(PerfDebugMonitorImpl.java:187)
+10-14 08:27:45.120 10559 14439 14439 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:8468)
+10-14 08:27:45.120 10559 14439 14439 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+10-14 08:27:45.120 10559 14439 14439 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:561)
+10-14 08:27:45.120 10559 14439 14439 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:954)
+10-14 08:27:45.121 10559 14439 14439 I MessageMonitor: Load libmiui_runtime
+10-14 08:27:45.140 10559 14439 14459 D AppScoutStateMachine: 14439-ScoutStateMachinecreated
+10-14 08:27:45.140 10559 14439 14439 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10559; state: ENABLED
+10-14 08:27:45.156 10559 14439 14439 W ziparchive: Unable to open '/data/app/~~LD7vjYNZe26aVM4swvMyDQ==/com.zcj.qr-cSjLlDqSYdvt883Am-UhZA==/base.dm': No such file or directory
+10-14 08:27:45.156 10559 14439 14439 W ziparchive: Unable to open '/data/app/~~LD7vjYNZe26aVM4swvMyDQ==/com.zcj.qr-cSjLlDqSYdvt883Am-UhZA==/base.dm': No such file or directory
+10-14 08:27:45.300 10559 14439 14439 I Perf    : Connecting to perf service.
+10-14 08:27:45.302 10559 14439 14439 V GraphicsEnvironment: ANGLE Developer option for 'com.zcj.qr' set to: 'default'
+10-14 08:27:45.303 10559 14439 14439 V GraphicsEnvironment: ANGLE GameManagerService for com.zcj.qr: false
+10-14 08:27:45.303 10559 14439 14439 V GraphicsEnvironment: App is not on the allowlist for updatable production driver.
+10-14 08:27:45.305 10559 14439 14439 I ForceDarkHelperStubImpl: initialize for com.zcj.qr , ForceDarkOrigin
+10-14 08:27:45.306 10559 14439 14439 D com.zcj.qr: JNI_OnLoad success
+10-14 08:27:45.306 10559 14439 14439 I MiuiForceDarkConfig: setConfig density:2.750000, mainRule:0, secondaryRule:0, tertiaryRule:0
+10-14 08:27:45.307 10559 14439 14439 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-14 08:27:45.307 10559 14439 14439 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-14 08:27:45.360 10559 14439 14439 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+10-14 08:27:45.384 10559 14439 14439 W libc    : Access denied finding property "ro.vendor.df.effect.conflict"
+10-14 08:27:45.405 10559 14439 14479 D ViewContentFactory: initViewContentFetcherClass
+10-14 08:27:45.405 10559 14439 14479 D ViewContentFactory: getInterceptorPackageInfo
+10-14 08:27:45.406 10559 14439 14479 D ViewContentFactory: getInitialApplication took 1ms
+10-14 08:27:45.406 10559 14439 14479 D ViewContentFactory: packageInfo.packageName: com.miui.catcherpatch
+10-14 08:27:45.415 10559 14439 14479 D ViewContentFactory: initViewContentFetcherClass took 10ms
+10-14 08:27:45.415 10559 14439 14479 I ContentCatcher: ViewContentFetcher : ViewContentFetcher
+10-14 08:27:45.415 10559 14439 14479 D ViewContentFactory: createInterceptor took 10ms
+10-14 08:27:45.417 10559 14439 14479 I ContentCatcher: Interceptor : Catcher list invalid for com.zcj.qr@com.zcj.qr.MainActivity@138854874
+10-14 08:27:45.417 10559 14439 14479 I ContentCatcher: Interceptor : Get featureInfo from config image_pick_mode
+10-14 08:27:45.418 10559 14439 14479 I ContentCatcher: Interceptor : Get featureInfo from config pick_mode
+10-14 08:27:45.421 10559 14439 14439 D ScrollerOptimizationManager: registerConfigChangedListener
+10-14 08:27:45.435 10559 14439 14439 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10559; state: ENABLED
+10-14 08:27:45.435 10559 14439 14439 D ScrollerOptimizationManager: registerConfigChangedListener
+10-14 08:27:45.444 10559 14439 14439 D IS_CTS_MODE: false
+10-14 08:27:45.444 10559 14439 14439 D MULTI_WINDOW_ENABLED: false
+10-14 08:27:45.446 10559 14439 14439 D DecorView[]: getWindowModeFromSystem  windowmode is 1
+10-14 08:27:45.452 10559 14439 14439 W com.zcj.qr: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+10-14 08:27:45.452 10559 14439 14439 W com.zcj.qr: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+10-14 08:27:45.461 10559 14439 14439 D CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10559; state: ENABLED
+10-14 08:27:45.490 10559 14439 14439 I wm_on_create_called: [0,90014454,com.zcj.qr.MainActivity,performCreate,122]
+10-14 08:27:45.497 10559 14439 14439 I wm_on_start_called: [0,90014454,com.zcj.qr.MainActivity,handleStartActivity,2]
+10-14 08:27:45.505 10559 14439 14439 I wm_on_resume_called: [0,90014454,com.zcj.qr.MainActivity,RESUME_ACTIVITY,5]
+10-14 08:27:45.520 10559 14439 14439 D DecorView[]: getWindowModeFromSystem  windowmode is 1
+10-14 08:27:45.520 10559 14439 14439 D DecorView[]: updateDecorCaptionStatus windowMode is 1
+10-14 08:27:45.527 10559 14439 14439 I wm_on_top_resumed_gained_called: [90014454,com.zcj.qr.MainActivity,topStateChangedWhenResumed]
+10-14 08:27:45.553 10559 14439 14476 I AdrenoGLES-0: QUALCOMM build                   : db3d445dbc, Ia06b22fa1a
+10-14 08:27:45.553 10559 14439 14476 I AdrenoGLES-0: Build Date                       : 10/04/21
+10-14 08:27:45.553 10559 14439 14476 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.32.02.16
+10-14 08:27:45.553 10559 14439 14476 I AdrenoGLES-0: Local Branch                     : 
+10-14 08:27:45.553 10559 14439 14476 I AdrenoGLES-0: Remote Branch                    : 
+10-14 08:27:45.553 10559 14439 14476 I AdrenoGLES-0: Remote Branch                    : 
+10-14 08:27:45.553 10559 14439 14476 I AdrenoGLES-0: Reconstruct Branch               : 
+10-14 08:27:45.553 10559 14439 14476 I AdrenoGLES-0: Build Config                     : S P 10.0.7 AArch64
+10-14 08:27:45.553 10559 14439 14476 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+10-14 08:27:45.556 10559 14439 14476 I AdrenoGLES-0: PFP: 0x016dd093, ME: 0x00000000
+10-14 08:27:45.565 10559 14439 14476 W libc    : Access denied finding property "vendor.migl.debug"
+10-14 08:27:45.567 10559 14439 14476 E libEGL  : pre_cache appList: ,,,
+10-14 08:27:45.638 10559 14439 14439 D VRI[MainActivity]: vri.reportNextDraw android.view.ViewRootImpl.performTraversals:4013 android.view.ViewRootImpl.doTraversal:2725 android.view.ViewRootImpl$TraversalRunnable.run:9812 android.view.Choreographer$CallbackRecord.run:1505 android.view.Choreographer$CallbackRecord.run:1513 
+10-14 08:27:45.639 10559 14439 14439 D VRI[MainActivity]: vri.Setup new sync id=0 syncSeqId=0
+10-14 08:27:45.645 10559 14439 14476 D com.zcj.qr: MiuiProcessManagerServiceStub setSchedFifo
+10-14 08:27:45.645 10559 14439 14476 I MiuiProcessManagerImpl: setSchedFifo pid:14439, mode:3
+10-14 08:27:45.646 10559 14439 14476 E libboost: fail to open node: No such file or directory
+10-14 08:27:45.657 10559 14439 14476 E perf_hint: Session creation failed, mPreferredRateNanos: -1
+10-14 08:27:45.658 10559 14439 14439 D VRI[MainActivity]: vri.reportDrawFinished syncSeqId=0 android.view.ViewRootImpl.lambda$createSyncIfNeeded$4$android-view-ViewRootImpl:4081 android.view.ViewRootImpl$$ExternalSyntheticLambda2.run:6 android.os.Handler.handleCallback:942 android.os.Handler.dispatchMessage:99 android.os.Looper.loopOnce:211 
+10-14 08:27:45.662 10559 14439 14439 I wm_on_idle_called: com.zcj.qr.MainActivity
+10-14 08:27:45.683 10559 14439 14439 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+10-14 08:27:45.684 10559 14439 14439 I HandWritingStubImpl: refreshLastKeyboardType: 1
+10-14 08:27:45.684 10559 14439 14439 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-14 08:27:45.699 10559 14439 14439 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-14 08:27:45.699 10559 14439 14439 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-14 08:27:46.986 10559 14439 14439 I wm_on_top_resumed_lost_called: [90014454,com.zcj.qr.MainActivity,topStateChangedWhenResumed]
+10-14 08:27:46.987 10559 14439 14439 I wm_on_paused_called: [0,90014454,com.zcj.qr.MainActivity,performPause,0]
+10-14 08:27:47.004 10559 14439 14479 D ViewContentFactory: initViewContentFetcherClass
+10-14 08:27:47.004 10559 14439 14479 I ContentCatcher: ViewContentFetcher : ViewContentFetcher
+10-14 08:27:47.004 10559 14439 14479 D ViewContentFactory: createInterceptor took 0ms
+10-14 08:27:47.006 10559 14439 14479 I ContentCatcher: Interceptor : Catcher list invalid for com.zcj.qr@com.zcj.qr.ui.history.HistoryActivity@102997210
+10-14 08:27:47.006 10559 14439 14479 I ContentCatcher: Interceptor : Get featureInfo from config image_pick_mode
+10-14 08:27:47.006 10559 14439 14479 I ContentCatcher: Interceptor : Get featureInfo from config pick_mode
+10-14 08:27:47.016 10559 14439 14439 D ScrollerOptimizationManager: registerConfigChangedListener
+10-14 08:27:47.017  root 17443 17443 I SLM-Slad-SlaStatsImpl: calcSlaRatios SLA_RATIO oldRatio = 0.000000, new ratio = 0.000000 , LRE = 0 ,interface = rmnet_data2 , 
+10-14 08:27:47.017  root 17443 17443 I SLM-Slad-SlaStatsImpl: calcSlaRatios SLA_RATIO oldRatio = 0.500000, new ratio = 0.500000 , LRE = 0 ,interface = wlan0 , 
+10-14 08:27:47.017  root 17443 17443 I SLM-Slad-SlaStatsImpl: calcSlaRatios SLA_RATIO oldRatio = 0.500000, new ratio = 0.500000 , LRE = 0 ,interface = wlan1 , 
+10-14 08:27:47.022 10559 14439 14439 D IS_CTS_MODE: false
+10-14 08:27:47.022 10559 14439 14439 D MULTI_WINDOW_ENABLED: false
+10-14 08:27:47.023 10559 14439 14439 D DecorView[]: getWindowModeFromSystem  windowmode is 1
+10-14 08:27:47.060 10559 14439 14439 I wm_on_create_called: [0,110137341,com.zcj.qr.ui.history.HistoryActivity,performCreate,58]
+10-14 08:27:47.063 10559 14439 14439 I wm_on_start_called: [0,110137341,com.zcj.qr.ui.history.HistoryActivity,handleStartActivity,0]
+10-14 08:27:47.065 10559 14439 14439 I wm_on_resume_called: [0,110137341,com.zcj.qr.ui.history.HistoryActivity,RESUME_ACTIVITY,1]
+10-14 08:27:47.069 10559 14439 14439 D DecorView[]: getWindowModeFromSystem  windowmode is 1
+10-14 08:27:47.069 10559 14439 14439 D DecorView[]: updateDecorCaptionStatus windowMode is 1
+10-14 08:27:47.078 10559 14439 14439 I wm_on_top_resumed_gained_called: [110137341,com.zcj.qr.ui.history.HistoryActivity,topStateChangedWhenResumed]
+10-14 08:27:47.102 10559 14439 14439 D VRI[HistoryActivity]: vri.reportNextDraw android.view.ViewRootImpl.performTraversals:4013 android.view.ViewRootImpl.doTraversal:2725 android.view.ViewRootImpl$TraversalRunnable.run:9812 android.view.Choreographer$CallbackRecord.run:1505 android.view.Choreographer$CallbackRecord.run:1513 
+10-14 08:27:47.102 10559 14439 14439 D VRI[HistoryActivity]: vri.Setup new sync id=0 syncSeqId=0
+10-14 08:27:47.109 10559 14439 14476 E perf_hint: Session creation failed, mPreferredRateNanos: -1
+10-14 08:27:47.114 10559 14439 14439 D VRI[HistoryActivity]: vri.reportDrawFinished syncSeqId=0 android.view.ViewRootImpl.lambda$createSyncIfNeeded$4$android-view-ViewRootImpl:4081 android.view.ViewRootImpl$$ExternalSyntheticLambda2.run:6 android.os.Handler.handleCallback:942 android.os.Handler.dispatchMessage:99 android.os.Looper.loopOnce:211 
+10-14 08:27:47.125 10559 14439 14439 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+10-14 08:27:47.176 10559 14439 14439 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+10-14 08:27:47.176 10559 14439 14439 I HandWritingStubImpl: refreshLastKeyboardType: 1
+10-14 08:27:47.176 10559 14439 14439 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-14 08:27:47.207 10559 14439 14439 I wm_on_idle_called: com.zcj.qr.ui.history.HistoryActivity
+10-14 08:27:47.674 10559 14439 14439 I wm_on_stop_called: [0,90014454,com.zcj.qr.MainActivity,STOP_ACTIVITY_ITEM,1]
+10-14 08:27:48.278 10559 14439 14439 D HistoryActivity: restore style: shape=0, dotColor=0xff1e293b, bgColor=0xffffffff, logoPath=/data/user/0/com.zcj.qr/cache/qr_logo_1791937598038.png
+10-14 08:27:48.280 10559 14439 14439 D AndroidRuntime: Shutting down VM
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: FATAL EXCEPTION: main
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: Process: com.zcj.qr, PID: 14439
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: java.lang.RuntimeException: Could not copy bitmap to parcel blob.
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.graphics.Bitmap.nativeWriteToParcel(Native Method)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.graphics.Bitmap.writeToParcel(Bitmap.java:2180)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.os.Parcel.writeParcelable(Parcel.java:2538)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at com.zcj.qr.util.QrStyle.writeToParcel(Unknown Source:45)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.os.Parcel.writeParcelable(Parcel.java:2538)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.os.Parcel.writeValue(Parcel.java:2439)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.os.Parcel.writeValue(Parcel.java:2316)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.os.Parcel.writeArrayMapInternal(Parcel.java:1265)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.os.BaseBundle.writeToParcelInner(BaseBundle.java:1802)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.os.Bundle.writeToParcel(Bundle.java:1362)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.os.Parcel.writeBundle(Parcel.java:1334)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.content.Intent.writeToParcel(Intent.java:11563)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.os.Parcel.writeTypedObject(Parcel.java:2157)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.app.IActivityTaskManager$Stub$Proxy.startActivity(IActivityTaskManager.java:2731)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1867)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:5669)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at androidx.activity.ComponentActivity.startActivityForResult(ComponentActivity.java:780)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:5622)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at androidx.activity.ComponentActivity.startActivityForResult(ComponentActivity.java:761)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6140)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6107)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at com.zcj.qr.ui.history.HistoryActivity$setupRecyclerView$4.invoke(HistoryActivity.kt:113)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at com.zcj.qr.ui.history.HistoryActivity$setupRecyclerView$4.invoke(HistoryActivity.kt:57)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at com.zcj.qr.ui.history.HistoryAdapter.bindGenerateItem$lambda$3(HistoryAdapter.kt:71)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at com.zcj.qr.ui.history.HistoryAdapter.$r8$lambda$UuH0P1jIccPAAnfVbhTdm4z8CGY(Unknown Source:0)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at com.zcj.qr.ui.history.HistoryAdapter$$ExternalSyntheticLambda3.onClick(Unknown Source:4)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.view.View.performClick(View.java:7600)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:7577)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.view.View.-$$Nest$mperformClickInternal(Unknown Source:0)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:30186)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:211)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:300)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8503)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:561)
+10-14 08:27:48.281 10559 14439 14439 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:954)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : FATAL CRASH: java.lang.RuntimeException: Could not copy bitmap to parcel blob.
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : java.lang.RuntimeException: Could not copy bitmap to parcel blob.
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.graphics.Bitmap.nativeWriteToParcel(Native Method)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.graphics.Bitmap.writeToParcel(Bitmap.java:2180)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.os.Parcel.writeParcelable(Parcel.java:2538)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at com.zcj.qr.util.QrStyle.writeToParcel(Unknown Source:45)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.os.Parcel.writeParcelable(Parcel.java:2538)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.os.Parcel.writeValue(Parcel.java:2439)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.os.Parcel.writeValue(Parcel.java:2316)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.os.Parcel.writeArrayMapInternal(Parcel.java:1265)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.os.BaseBundle.writeToParcelInner(BaseBundle.java:1802)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.os.Bundle.writeToParcel(Bundle.java:1362)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.os.Parcel.writeBundle(Parcel.java:1334)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.content.Intent.writeToParcel(Intent.java:11563)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.os.Parcel.writeTypedObject(Parcel.java:2157)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.app.IActivityTaskManager$Stub$Proxy.startActivity(IActivityTaskManager.java:2731)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1867)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.app.Activity.startActivityForResult(Activity.java:5669)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at androidx.activity.ComponentActivity.startActivityForResult(ComponentActivity.java:780)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.app.Activity.startActivityForResult(Activity.java:5622)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at androidx.activity.ComponentActivity.startActivityForResult(ComponentActivity.java:761)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.app.Activity.startActivity(Activity.java:6140)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.app.Activity.startActivity(Activity.java:6107)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at com.zcj.qr.ui.history.HistoryActivity$setupRecyclerView$4.invoke(HistoryActivity.kt:113)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at com.zcj.qr.ui.history.HistoryActivity$setupRecyclerView$4.invoke(HistoryActivity.kt:57)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at com.zcj.qr.ui.history.HistoryAdapter.bindGenerateItem$lambda$3(HistoryAdapter.kt:71)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at com.zcj.qr.ui.history.HistoryAdapter.$r8$lambda$UuH0P1jIccPAAnfVbhTdm4z8CGY(Unknown Source:0)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at com.zcj.qr.ui.history.HistoryAdapter$$ExternalSyntheticLambda3.onClick(Unknown Source:4)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.view.View.performClick(View.java:7600)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.view.View.performClickInternal(View.java:7577)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.view.View.-$$Nest$mperformClickInternal(Unknown Source:0)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.view.View$PerformClick.run(View.java:30186)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.os.Handler.handleCallback(Handler.java:942)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.os.Looper.loopOnce(Looper.java:211)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.os.Looper.loop(Looper.java:300)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at android.app.ActivityThread.main(ActivityThread.java:8503)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at java.lang.reflect.Method.invoke(Native Method)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:561)
+10-14 08:27:48.282 10559 14439 14439 E QrApp   : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:954)
+10-14 08:27:48.282 10559 14439 14439 W System.err: java.lang.RuntimeException: Could not copy bitmap to parcel blob.
+10-14 08:27:48.282 10559 14439 14439 W System.err: 	at android.graphics.Bitmap.nativeWriteToParcel(Native Method)
+10-14 08:27:48.282 10559 14439 14439 W System.err: 	at android.graphics.Bitmap.writeToParcel(Bitmap.java:2180)
+10-14 08:27:48.282 10559 14439 14439 W System.err: 	at android.os.Parcel.writeParcelable(Parcel.java:2538)
+10-14 08:27:48.282 10559 14439 14439 W System.err: 	at com.zcj.qr.util.QrStyle.writeToParcel(Unknown Source:45)
+10-14 08:27:48.282 10559 14439 14439 W System.err: 	at android.os.Parcel.writeParcelable(Parcel.java:2538)
+10-14 08:27:48.282 10559 14439 14439 W System.err: 	at android.os.Parcel.writeValue(Parcel.java:2439)
+10-14 08:27:48.282 10559 14439 14439 W System.err: 	at android.os.Parcel.writeValue(Parcel.java:2316)
+10-14 08:27:48.282 10559 14439 14439 W System.err: 	at android.os.Parcel.writeArrayMapInternal(Parcel.java:1265)
+10-14 08:27:48.282 10559 14439 14439 W System.err: 	at android.os.BaseBundle.writeToParcelInner(BaseBundle.java:1802)
+10-14 08:27:48.282 10559 14439 14439 W System.err: 	at android.os.Bundle.writeToParcel(Bundle.java:1362)
+10-14 08:27:48.282 10559 14439 14439 W System.err: 	at android.os.Parcel.writeBundle(Parcel.java:1334)
+10-14 08:27:48.282 10559 14439 14439 W System.err: 	at android.content.Intent.writeToParcel(Intent.java:11563)
+10-14 08:27:48.282 10559 14439 14439 W System.err: 	at android.os.Parcel.writeTypedObject(Parcel.java:2157)
+10-14 08:27:48.282 10559 14439 14439 W System.err: 	at android.app.IActivityTaskManager$Stub$Proxy.startActivity(IActivityTaskManager.java:2731)
+10-14 08:27:48.282 10559 14439 14439 W System.err: 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1867)
+10-14 08:27:48.282 10559 14439 14439 W System.err: 	at android.app.Activity.startActivityForResult(Activity.java:5669)
+10-14 08:27:48.282 10559 14439 14439 W System.err: 	at androidx.activity.ComponentActivity.startActivityForResult(ComponentActivity.java:780)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at android.app.Activity.startActivityForResult(Activity.java:5622)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at androidx.activity.ComponentActivity.startActivityForResult(ComponentActivity.java:761)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at android.app.Activity.startActivity(Activity.java:6140)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at android.app.Activity.startActivity(Activity.java:6107)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at com.zcj.qr.ui.history.HistoryActivity$setupRecyclerView$4.invoke(HistoryActivity.kt:113)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at com.zcj.qr.ui.history.HistoryActivity$setupRecyclerView$4.invoke(HistoryActivity.kt:57)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at com.zcj.qr.ui.history.HistoryAdapter.bindGenerateItem$lambda$3(HistoryAdapter.kt:71)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at com.zcj.qr.ui.history.HistoryAdapter.$r8$lambda$UuH0P1jIccPAAnfVbhTdm4z8CGY(Unknown Source:0)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at com.zcj.qr.ui.history.HistoryAdapter$$ExternalSyntheticLambda3.onClick(Unknown Source:4)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at android.view.View.performClick(View.java:7600)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at android.view.View.performClickInternal(View.java:7577)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at android.view.View.-$$Nest$mperformClickInternal(Unknown Source:0)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at android.view.View$PerformClick.run(View.java:30186)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at android.os.Looper.loopOnce(Looper.java:211)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at android.os.Looper.loop(Looper.java:300)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:8503)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:561)
+10-14 08:27:48.283 10559 14439 14439 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:954)
+10-14 08:27:50.681 10559 14439 14510 W com.zcj.qr: No such thread for suspend: 0x75cb8d2738:main
+10-14 08:27:50.728 10559 14439 14447 I com.zcj.qr: Thread[5,tid=14447,WaitingInMainSignalCatcherLoop,Thread*=0xb40000763e3a7000,peer=0x12f83688,"Signal Catcher"]: reacting to signal 3
+10-14 08:27:50.728 10559 14439 14447 I com.zcj.qr: 
+10-14 08:27:50.791 10559 14439 14447 I com.zcj.qr: Wrote stack traces to tombstoned
+10-14 08:27:53.183 10559 14439 14516 W com.zcj.qr: No such thread for suspend: 0x75cb8d2738:main
+10-14 08:27:53.220 10559 14439 14447 I com.zcj.qr: Thread[5,tid=14447,WaitingInMainSignalCatcherLoop,Thread*=0xb40000763e3a7000,peer=0x12f83688,"Signal Catcher"]: reacting to signal 3
+10-14 08:27:53.220 10559 14439 14447 I com.zcj.qr: 
+10-14 08:27:53.280 10559 14439 14447 I com.zcj.qr: Wrote stack traces to tombstoned
+10-14 08:27:53.308 10559 14439 14470 I com.zcj.qr: ProcessProfilingInfo new_methods=975 is saved saved_to_disk=1 resolve_classes_delay=8000
+10-14 08:27:55.387 10559 14439 14464 W MIUIScout ANR: Print Message Id: 0 MessageInfo: { when=-7s151ms callback=android.view.View$UnsetPressedState target=android.view.ViewRootImpl$ViewRootHandler }
+10-14 08:27:55.387 10559 14439 14464 W MIUIScout ANR: Print Message Id: 1 MessageInfo: { when=-7s113ms what=2 arg1=388 obj=com.android.internal.os.SomeArgs@980f968 target=android.view.AccessibilityInteractionController$PrivateHandler }
+10-14 08:27:55.387 10559 14439 14464 W MIUIScout ANR: Print Message Id: 2 MessageInfo: { when=-6s613ms what=2 arg1=388 obj=com.android.internal.os.SomeArgs@6581181 target=android.view.AccessibilityInteractionController$PrivateHandler }
+10-14 08:27:55.387 10559 14439 14464 W MIUIScout ANR: Print Message Id: 3 MessageInfo: { when=-6s110ms what=2 arg1=388 obj=com.android.internal.os.SomeArgs@39af226 target=android.view.AccessibilityInteractionController$PrivateHandler }
+10-14 08:27:55.387 10559 14439 14464 W MIUIScout ANR: Print Message Id: 4 MessageInfo: { when=-5s608ms what=2 arg1=388 obj=com.android.internal.os.SomeArgs@e24de67 target=android.view.AccessibilityInteractionController$PrivateHandler }
+10-14 08:27:55.387 10559 14439 14464 W MIUIScout ANR: (Print messages: 5, polling=false, quitting=false)
+10-14 08:27:55.418 10559 14439 14451 I com.zcj.qr: This is non sticky GC, maxfree is 33554432 minfree is 8388608
+10-14 08:27:56.262 10559 14439 14447 I com.zcj.qr: Thread[5,tid=14447,WaitingInMainSignalCatcherLoop,Thread*=0xb40000763e3a7000,peer=0x13a40000,"Signal Catcher"]: reacting to signal 3
+10-14 08:27:56.262 10559 14439 14447 I com.zcj.qr: 
+10-14 08:27:56.317 10559 14439 14447 I com.zcj.qr: Wrote stack traces to tombstoned

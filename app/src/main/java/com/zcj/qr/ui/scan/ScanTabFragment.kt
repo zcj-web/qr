@@ -7,12 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.navigation.fragment.findNavController
 import com.zcj.qr.R
 import com.zcj.qr.databinding.FragmentScanTabBinding
+import com.zcj.qr.ui.scan.camera.CameraScanActivity
 import com.zcj.qr.ui.scan.camera.CameraScanViewModel
-import com.zcj.qr.ui.scan.gallery.GalleryScanViewModel
-
+import com.zcj.qr.ui.scan.gallery.GalleryScanActivity
+import com.zcj.qr.ui.scan.result.ScanResultActivity
+import com.zcj.qr.ui.history.HistoryActivity
 
 class ScanTabFragment : Fragment() {
 
@@ -20,7 +21,6 @@ class ScanTabFragment : Fragment() {
     private val binding get() = _binding!!
 
     private val cameraViewModel: CameraScanViewModel by viewModels()
-    private val galleryViewModel: GalleryScanViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -33,34 +33,32 @@ class ScanTabFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setupClickListeners()
-        observeResults()
+        try {
+            setupClickListeners()
+            observeResults()
+        } catch (e: Exception) {
+            android.util.Log.e("QrApp", "ScanTabFragment crash: $e", e)
+        }
     }
 
     private fun setupClickListeners() {
         binding.btnCameraScan.setOnClickListener {
-            findNavController().navigate(R.id.action_scanTab_to_cameraScan)
+            startActivity(Intent(requireContext(), CameraScanActivity::class.java))
         }
         binding.btnGalleryScan.setOnClickListener {
-            findNavController().navigate(R.id.action_scanTab_to_galleryScan)
+            startActivity(Intent(requireContext(), GalleryScanActivity::class.java))
         }
         binding.btnHistory.setOnClickListener {
-            val intent = Intent(requireContext(), com.zcj.qr.ui.history.HistoryActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(requireContext(), HistoryActivity::class.java))
         }
     }
 
     private fun observeResults() {
         cameraViewModel.scannedResult.observe(viewLifecycleOwner) { result ->
-            if (result != null) {
-                val bundle = Bundle().also { it.putString("content", result) }
-                findNavController().navigate(R.id.action_scanTab_to_result, bundle)
-            }
-        }
-        galleryViewModel.scannedResult.observe(viewLifecycleOwner) { result ->
-            if (result != null) {
-                val bundle = Bundle().also { it.putString("content", result) }
-                findNavController().navigate(R.id.action_scanTab_to_result, bundle)
+            result?.let {
+                startActivity(Intent(requireContext(), ScanResultActivity::class.java).apply {
+                    putExtra("content", it)
+                })
             }
         }
     }

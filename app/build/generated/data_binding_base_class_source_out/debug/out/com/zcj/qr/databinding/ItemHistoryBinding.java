@@ -31,18 +31,22 @@ public final class ItemHistoryBinding implements ViewBinding {
   public final TextView tvContent;
 
   @NonNull
+  public final TextView tvTag;
+
+  @NonNull
   public final TextView tvTime;
 
   @NonNull
   public final TextView tvType;
 
   private ItemHistoryBinding(@NonNull CardView rootView, @NonNull ImageButton btnDelete,
-      @NonNull ImageView ivTypeIcon, @NonNull TextView tvContent, @NonNull TextView tvTime,
-      @NonNull TextView tvType) {
+      @NonNull ImageView ivTypeIcon, @NonNull TextView tvContent, @NonNull TextView tvTag,
+      @NonNull TextView tvTime, @NonNull TextView tvType) {
     this.rootView = rootView;
     this.btnDelete = btnDelete;
     this.ivTypeIcon = ivTypeIcon;
     this.tvContent = tvContent;
+    this.tvTag = tvTag;
     this.tvTime = tvTime;
     this.tvType = tvType;
   }
@@ -92,6 +96,12 @@ public final class ItemHistoryBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvTag;
+      TextView tvTag = ViewBindings.findChildViewById(rootView, id);
+      if (tvTag == null) {
+        break missingId;
+      }
+
       id = R.id.tvTime;
       TextView tvTime = ViewBindings.findChildViewById(rootView, id);
       if (tvTime == null) {
@@ -104,8 +114,8 @@ public final class ItemHistoryBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemHistoryBinding((CardView) rootView, btnDelete, ivTypeIcon, tvContent, tvTime,
-          tvType);
+      return new ItemHistoryBinding((CardView) rootView, btnDelete, ivTypeIcon, tvContent, tvTag,
+          tvTime, tvType);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

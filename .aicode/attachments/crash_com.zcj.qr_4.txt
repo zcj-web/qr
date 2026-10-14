@@ -1,0 +1,22 @@
+CRASH in com.zcj.qr
+
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: FATAL EXCEPTION: main
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: Process: com.zcj.qr, PID: 11971
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: java.lang.IllegalStateException: Fragment CameraScanFragment{1b0b7d7} (aebf95b4-6cb8-4842-9343-202c2b43e56d id=0x7f09009c) is attempting to registerForActivityResult after being created. Fragments must call registerForActivityResult() before they are created (i.e. initialization, onAttach(), or onCreate()).
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: 	at androidx.fragment.app.Fragment.prepareCallInternal(Fragment.java:3604)
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: 	at androidx.fragment.app.Fragment.registerForActivityResult(Fragment.java:3571)
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: 	at com.zcj.qr.ui.scan.camera.CameraScanFragment.setupCaptureButton$lambda$4(CameraScanFragment.kt:93)
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: 	at com.zcj.qr.ui.scan.camera.CameraScanFragment.$r8$lambda$s5nneA8pWglvCR8RXfR5npitwQs(Unknown Source:0)
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: 	at com.zcj.qr.ui.scan.camera.CameraScanFragment$$ExternalSyntheticLambda3.onClick(Unknown Source:2)
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: 	at android.view.View.performClick(View.java:7600)
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: 	at android.view.View.performClickInternal(View.java:7577)
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: 	at android.view.View.-$$Nest$mperformClickInternal(Unknown Source:0)
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:30186)
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:211)
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:300)
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8503)
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:561)
+10-14 08:24:24.063 10559 11971 11971 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:954)

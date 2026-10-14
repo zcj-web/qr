@@ -1,7 +1,9 @@
 package com.zcj.qr.ui.scan.gallery
 
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,10 +12,9 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.navigation.fragment.findNavController
 import com.zcj.qr.R
 import com.zcj.qr.databinding.FragmentGalleryScanBinding
-import android.content.Intent
+import com.zcj.qr.ui.scan.result.ScanResultActivity
 
 class GalleryScanFragment : Fragment() {
 
@@ -44,19 +45,30 @@ class GalleryScanFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        android.util.Log.d("QrApp", "GalleryScanFragment onViewCreated")
         super.onViewCreated(view, savedInstanceState)
-        setupClickListeners()
-        observeResult()
-        checkStoragePermission()
+        try {
+            setupClickListeners()
+            observeResult()
+            checkStoragePermission()
+        } catch (e: Exception) {
+            android.util.Log.e("QrApp", "GalleryScanFragment crash: $e", e)
+        }
     }
 
     private fun checkStoragePermission() {
-        if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.S_V2) {
-            if (ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.READ_EXTERNAL_STORAGE)
-                != PackageManager.PERMISSION_GRANTED
-            ) {
-                requestStoragePermission.launch(Manifest.permission.READ_EXTERNAL_STORAGE)
+        val needsPermission = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.READ_MEDIA_IMAGES) != PackageManager.PERMISSION_GRANTED
+        } else {
+            ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
+        }
+        if (needsPermission) {
+            val permission = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                Manifest.permission.READ_MEDIA_IMAGES
+            } else {
+                Manifest.permission.READ_EXTERNAL_STORAGE
             }
+            requestStoragePermission.launch(permission)
         }
     }
 
@@ -72,10 +84,9 @@ class GalleryScanFragment : Fragment() {
     private fun observeResult() {
         viewModel.scannedResult.observe(viewLifecycleOwner) { result ->
             result?.let {
-                findNavController().navigate(
-                    R.id.action_scanTab_to_result,
-                    Bundle().also { b -> b.putString("content", it) }
-                )
+                startActivity(Intent(requireContext(), ScanResultActivity::class.java).apply {
+                    putExtra("content", it)
+                })
             }
         }
         viewModel.showError.observe(viewLifecycleOwner) { error ->

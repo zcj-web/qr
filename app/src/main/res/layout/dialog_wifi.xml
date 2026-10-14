@@ -46,7 +46,6 @@
             android:id="@+id/radioWep"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:text="WEP" />
         <RadioButton
             android:id="@+id/radioNone"
@@ -55,4 +54,26 @@
             android:layout_marginStart="16dp"
             android:text="无" />
     </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cbEncrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="加密内容" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:id="@+id/encryptPasswordLayout">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEncryptPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="解密密码"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
 </LinearLayout>

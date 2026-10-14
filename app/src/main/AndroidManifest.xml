@@ -37,6 +37,41 @@
             android:theme="@style/Theme.QrCode"
             android:windowSoftInputMode="adjustResize" />
         <activity
+            android:name=".ui.scan.camera.CameraScanActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QrCode" />
+        <activity
+            android:name=".ui.scan.share.ShareScanActivity"
+            android:exported="true"
+            android:theme="@style/Theme.QrCode">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.scan.gallery.GalleryScanActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QrCode" />
+        <activity
+            android:name=".ui.generate.quickcreate.QuickCreateActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QrCode" />
+        <activity
+            android:name=".ui.generate.quickcreate.QuickItemInputActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QrCode" />
+        <activity
+            android:name=".ui.generate.custom.CustomGenerateActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QrCode" />
+        <activity
             android:name=".ui.generate.preview.QrPreviewActivity"
             android:exported="false"
             android:theme="@style/Theme.QrCode" />

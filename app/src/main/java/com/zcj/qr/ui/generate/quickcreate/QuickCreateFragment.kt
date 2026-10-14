@@ -1,14 +1,21 @@
 package com.zcj.qr.ui.generate.quickcreate
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
+import androidx.fragment.app.setFragmentResultListener
 import com.zcj.qr.R
+import com.zcj.qr.data.QrDatabase
+import com.zcj.qr.data.repository.HistoryRepository
 import com.zcj.qr.databinding.FragmentQuickCreateBinding
+import com.zcj.qr.ui.generate.preview.QrPreviewActivity
 import com.zcj.qr.ui.generate.quickcreate.QuickCreateFragment.QuickType
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class QuickCreateFragment : Fragment() {
 
@@ -27,6 +34,41 @@ class QuickCreateFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupGrid()
+        setupResultListener()
+    }
+
+    /** 监听 QuickCreateDialogFragment 的结果，生成后导航到预览 */
+    private fun setupResultListener() {
+        setFragmentResultListener(QuickCreateDialogFragment.RESULT_KEY) { _, bundle ->
+            val content = bundle.getString("content") ?: return@setFragmentResultListener
+            val type = bundle.getString("type", "text")
+            val prefs = requireActivity().getSharedPreferences("qr_style_pref", android.content.Context.MODE_PRIVATE)
+            val dotColor = prefs.getInt("dot_color", 0xFF1E293B.toInt())
+            val bgColor = prefs.getInt("bg_color", 0xFFFFFFFF.toInt())
+            val shapeIdx = prefs.getInt("dot_shape", 0)
+            val logoFilePath = prefs.getString("logo_file_path", null)
+
+            // 保存样式到数据库，确保历史点击查看时显示正确颜色
+            val styleJson = "$shapeIdx:${Integer.toHexString(dotColor and 0x00FFFFFF)}:${Integer.toHexString(bgColor and 0x00FFFFFF)}"
+            GlobalScope.launch(Dispatchers.IO) {
+                try {
+                    val db = QrDatabase.getDatabase(requireActivity().applicationContext)
+                    val repo = HistoryRepository(db)
+                    repo.addGenerate(content, "quick_dialog", false, styleJson, logoFilePath)
+                } catch (e: Exception) {
+                    android.util.Log.e("QuickCreateFragment", "history save failed: ${e.message}", e)
+                }
+            }
+
+            val intent = android.content.Intent(requireContext(), QrPreviewActivity::class.java).apply {
+                putExtra("content", content)
+                putExtra("dot_color", dotColor)
+                putExtra("bg_color", bgColor)
+                putExtra("dot_shape", shapeIdx)
+                logoFilePath?.let { putExtra("logo_file_path", it) }
+            }
+            startActivity(intent)
+        }
     }
 
     private fun setupGrid() {
@@ -51,11 +93,11 @@ class QuickCreateFragment : Fragment() {
             card.findViewById<android.widget.ImageView>(R.id.ivIcon)?.setImageResource(icon)
             card.findViewById<android.widget.TextView>(R.id.tvLabel)?.text = label
             card.setOnClickListener {
-                val bundle = Bundle().also { 
-            it.putString("type", type.name)
-            it.putString("label", label)
-        }
-                findNavController().navigate(R.id.action_quickCreateFragment_to_dialog, bundle)
+                val intent = Intent(requireContext(), QuickCreateActivity::class.java).apply {
+                    putExtra("type", type.name)
+                    putExtra("label", label)
+                }
+                startActivity(intent)
             }
             binding.quickGrid.addView(card)
         }

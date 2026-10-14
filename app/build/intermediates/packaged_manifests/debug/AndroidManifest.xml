@@ -71,6 +71,45 @@
             android:theme="@style/Theme.QrCode"
             android:windowSoftInputMode="adjustResize" />
         <activity
+            android:name="com.zcj.qr.ui.scan.camera.CameraScanActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QrCode" />
+        <activity
+            android:name="com.zcj.qr.ui.scan.share.ShareScanActivity"
+            android:exported="true"
+            android:theme="@style/Theme.QrCode" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zcj.qr.ui.scan.gallery.GalleryScanActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QrCode" />
+        <activity
+            android:name="com.zcj.qr.ui.generate.quickcreate.QuickCreateActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QrCode" />
+        <activity
+            android:name="com.zcj.qr.ui.generate.quickcreate.QuickItemInputActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QrCode" />
+        <activity
+            android:name="com.zcj.qr.ui.generate.custom.CustomGenerateActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QrCode" />
+        <activity
             android:name="com.zcj.qr.ui.generate.preview.QrPreviewActivity"
             android:exported="false"
             android:theme="@style/Theme.QrCode" />

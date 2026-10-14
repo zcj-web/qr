@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 data class ScanHistoryEntity(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
     val content: String,
-    val type: String,          // "wifi"/"contact"/"url"/"phone"/"sms"/"email"/"text"/"encrypted"
+    val type: String,
     val timestamp: Long,
     val isEncrypted: Boolean = false
 )
@@ -18,5 +18,8 @@ data class GenerateHistoryEntity(
     val content: String,
     val type: String,
     val timestamp: Long,
-    val hasEncryption: Boolean = false
+    val hasEncryption: Boolean = false,
+    val logoFilePath: String? = null,
+    // 样式 JSON：包含 dot_shape(0), dot_color, bg_color
+    val styleJson: String? = null
 )

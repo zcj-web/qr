@@ -1,0 +1,23 @@
+# LogSleuth session (snapshot)
+# saved: 2026-10-14T00:26:04.311265Z
+# device: Xiaomi Mi 10
+# android: 13 (SDK 33)
+# access: READ_LOGS
+10-14 08:24:26.950 10559 11971 12233 W com.zcj.qr: No such thread for suspend: 0x75d39c7738:main
+10-14 08:24:27.001 10559 11971 11979 I com.zcj.qr: Thread[5,tid=11979,WaitingInMainSignalCatcherLoop,Thread*=0xb40000763e3a7000,peer=0x13c805a8,"Signal Catcher"]: reacting to signal 3
+10-14 08:24:27.001 10559 11971 11979 I com.zcj.qr: 
+10-14 08:24:27.076 10559 11971 11979 I com.zcj.qr: Wrote stack traces to tombstoned
+10-14 08:24:27.608 10559 11971 12005 I com.zcj.qr: ProcessProfilingInfo new_methods=318 is saved saved_to_disk=1 resolve_classes_delay=8000
+10-14 08:24:29.437 10559 11971 12255 W com.zcj.qr: No such thread for suspend: 0x764d13b738:main
+10-14 08:24:29.471 10559 11971 11979 I com.zcj.qr: Thread[5,tid=11979,WaitingInMainSignalCatcherLoop,Thread*=0xb40000763e3a7000,peer=0x13c805a8,"Signal Catcher"]: reacting to signal 3
+10-14 08:24:29.471 10559 11971 11979 I com.zcj.qr: 
+10-14 08:24:29.532 10559 11971 11979 I com.zcj.qr: Wrote stack traces to tombstoned
+10-14 08:24:40.533 10559 11971 12218 W MIUIScout ANR: Print Message Id: 0 MessageInfo: { when=-16s474ms callback=android.view.View$UnsetPressedState target=android.view.ViewRootImpl$ViewRootHandler }
+10-14 08:24:40.533 10559 11971 12218 W MIUIScout ANR: Print Message Id: 1 MessageInfo: { when=-16s474ms what=0 target=android.graphics.SurfaceTexture$1 }
+10-14 08:24:40.533 10559 11971 12218 W MIUIScout ANR: Print Message Id: 2 MessageInfo: { when=-16s469ms what=2131296869 target=android.os.Handler }
+10-14 08:24:40.533 10559 11971 12218 W MIUIScout ANR: Print Message Id: 3 MessageInfo: { when=-16s469ms what=2131296871 obj=[(201.5,1079.0), (201.5,1079.0), (201.5,1079.0)] target=android.os.Handler }
+10-14 08:24:40.533 10559 11971 12218 W MIUIScout ANR: Print Message Id: 4 MessageInfo: { when=-16s469ms callback=com.journeyapps.barcodescanner.camera.CameraInstance$$ExternalSyntheticLambda3 target=android.os.Handler }
+10-14 08:24:40.534 10559 11971 12218 W MIUIScout ANR: (Print messages: 5, polling=false, quitting=false)
+10-14 08:24:41.394 10559 11971 11979 I com.zcj.qr: Thread[5,tid=11979,WaitingInMainSignalCatcherLoop,Thread*=0xb40000763e3a7000,peer=0x13c805a8,"Signal Catcher"]: reacting to signal 3
+10-14 08:24:41.394 10559 11971 11979 I com.zcj.qr: 
+10-14 08:24:41.450 10559 11971 11979 I com.zcj.qr: Wrote stack traces to tombstoned

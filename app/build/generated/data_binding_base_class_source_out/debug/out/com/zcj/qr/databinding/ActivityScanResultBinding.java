@@ -28,9 +28,6 @@ public final class ActivityScanResultBinding implements ViewBinding {
   public final Button btnCopy;
 
   @NonNull
-  public final Button btnDecrypt;
-
-  @NonNull
   public final ProgressBar progressBar;
 
   @NonNull
@@ -43,12 +40,11 @@ public final class ActivityScanResultBinding implements ViewBinding {
   public final TextView tvType;
 
   private ActivityScanResultBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnAction,
-      @NonNull Button btnCopy, @NonNull Button btnDecrypt, @NonNull ProgressBar progressBar,
-      @NonNull TextView tvContent, @NonNull TextView tvLabel, @NonNull TextView tvType) {
+      @NonNull Button btnCopy, @NonNull ProgressBar progressBar, @NonNull TextView tvContent,
+      @NonNull TextView tvLabel, @NonNull TextView tvType) {
     this.rootView = rootView;
     this.btnAction = btnAction;
     this.btnCopy = btnCopy;
-    this.btnDecrypt = btnDecrypt;
     this.progressBar = progressBar;
     this.tvContent = tvContent;
     this.tvLabel = tvLabel;
@@ -94,12 +90,6 @@ public final class ActivityScanResultBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnDecrypt;
-      Button btnDecrypt = ViewBindings.findChildViewById(rootView, id);
-      if (btnDecrypt == null) {
-        break missingId;
-      }
-
       id = R.id.progressBar;
       ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
       if (progressBar == null) {
@@ -125,7 +115,7 @@ public final class ActivityScanResultBinding implements ViewBinding {
       }
 
       return new ActivityScanResultBinding((ConstraintLayout) rootView, btnAction, btnCopy,
-          btnDecrypt, progressBar, tvContent, tvLabel, tvType);
+          progressBar, tvContent, tvLabel, tvType);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

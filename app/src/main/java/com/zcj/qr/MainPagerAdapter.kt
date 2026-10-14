@@ -10,7 +10,19 @@ class MainPagerAdapter(fragmentActivity: FragmentActivity) : FragmentStateAdapte
     override fun getItemCount(): Int = 2
 
     override fun createFragment(position: Int): Fragment = when (position) {
-        0 -> ScanTabFragment()
-        else -> GenerateTabFragment()
+        0 -> {
+            try { ScanTabFragment() } 
+            catch (e: Exception) { 
+                android.util.Log.e("QrApp", "Create ScanTabFragment crash: $e")
+                ScanTabFragment() 
+            }
+        }
+        else -> {
+            try { GenerateTabFragment() } 
+            catch (e: Exception) { 
+                android.util.Log.e("QrApp", "Create GenerateTabFragment crash: $e")
+                GenerateTabFragment() 
+            }
+        }
     }
 }

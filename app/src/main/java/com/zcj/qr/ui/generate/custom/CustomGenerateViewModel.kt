@@ -3,13 +3,9 @@ package com.zcj.qr.ui.generate.custom
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.MutableLiveData
 import com.zcj.qr.crypto.Aes256GcmCrypto
-import com.zcj.qr.crypto.QrProtocolParser
-import com.zcj.qr.util.QrCodeGenerator
-import com.zcj.qr.util.QrStyle
-import com.zcj.qr.util.DotShape
 
 class CustomGenerateViewModel : ViewModel() {
-    val generatedBitmap = MutableLiveData<android.graphics.Bitmap?>()
+    val generatedContent = MutableLiveData<String?>()
     val showError = MutableLiveData<String?>()
 
     private var currentContent: String = ""
@@ -28,14 +24,7 @@ class CustomGenerateViewModel : ViewModel() {
                 isEncrypted = false
                 content
             }
-
-            val style = QrStyle(
-                dotColor = 0xFF1E293B.toInt(),
-                bgColor = 0xFFFFFFFF.toInt(),
-                dotShape = DotShape.ROUND
-            )
-            val bitmap = QrCodeGenerator.generate(currentContent, size = 800, style = style)
-            generatedBitmap.value = bitmap
+            generatedContent.value = currentContent
         } catch (e: Exception) {
             showError.value = e.message ?: "生成失败"
         }

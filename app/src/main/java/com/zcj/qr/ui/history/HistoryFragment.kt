@@ -14,7 +14,6 @@ import com.zcj.qr.ui.history.HistoryViewModel
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
-
 class HistoryFragment : Fragment() {
 
     private var _binding: FragmentScanHistoryBinding? = null
@@ -32,15 +31,21 @@ class HistoryFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        android.util.Log.d("QrApp", "HistoryFragment onViewCreated")
         super.onViewCreated(view, savedInstanceState)
-        setupRecyclerView()
-        observeData()
+        try {
+            setupRecyclerView()
+            observeData()
+        } catch (e: Exception) {
+            android.util.Log.e("QrApp", "HistoryFragment crash: $e", e)
+        }
     }
 
     private fun setupRecyclerView() {
-        adapter = HistoryAdapter { entity ->
-            viewModel.deleteScan(entity.id)
-        }
+        adapter = HistoryAdapter(
+            onDeleteScan = { entity -> viewModel.deleteScan(entity.id) },
+            onDeleteGenerate = { entity -> viewModel.deleteGenerate(entity.id) }
+        )
         binding.rvHistory.apply {
             layoutManager = LinearLayoutManager(requireContext())
             adapter = this@HistoryFragment.adapter
@@ -49,14 +54,18 @@ class HistoryFragment : Fragment() {
 
     private fun observeData() {
         lifecycleScope.launch {
-            viewModel.scanHistory.collectLatest { list ->
-                adapter.submitList(list)
-                binding.tvEmpty.visibility = if (list.isEmpty()) View.VISIBLE else View.GONE
-            }
-        }
-        lifecycleScope.launch {
-            viewModel.generateHistory.collectLatest { list ->
-                // Could show separate tabs, for now just showing scan history
+            viewModel.scanHistory.collectLatest { scanList ->
+                viewModel.generateHistory.collectLatest { generateList ->
+                    val allItems = (scanList.map { HistoryItem.Scan(it) } + generateList.map { HistoryItem.Generate(it) })
+                        .sortedByDescending { 
+                            when (it) {
+                                is HistoryItem.Scan -> it.entity.timestamp
+                                is HistoryItem.Generate -> it.entity.timestamp
+                            }
+                        }
+                    adapter.submitList(allItems)
+                    binding.tvEmpty.visibility = if (allItems.isEmpty()) View.VISIBLE else View.GONE
+                }
             }
         }
     }

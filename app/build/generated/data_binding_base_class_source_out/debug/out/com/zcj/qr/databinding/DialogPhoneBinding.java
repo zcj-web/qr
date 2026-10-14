@@ -4,12 +4,14 @@ package com.zcj.qr.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.zcj.qr.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -20,10 +22,24 @@ public final class DialogPhoneBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final CheckBox cbEncrypt;
+
+  @NonNull
+  public final TextInputLayout encryptPasswordLayout;
+
+  @NonNull
+  public final TextInputEditText etEncryptPassword;
+
+  @NonNull
   public final TextInputEditText etPhone;
 
-  private DialogPhoneBinding(@NonNull LinearLayout rootView, @NonNull TextInputEditText etPhone) {
+  private DialogPhoneBinding(@NonNull LinearLayout rootView, @NonNull CheckBox cbEncrypt,
+      @NonNull TextInputLayout encryptPasswordLayout, @NonNull TextInputEditText etEncryptPassword,
+      @NonNull TextInputEditText etPhone) {
     this.rootView = rootView;
+    this.cbEncrypt = cbEncrypt;
+    this.encryptPasswordLayout = encryptPasswordLayout;
+    this.etEncryptPassword = etEncryptPassword;
     this.etPhone = etPhone;
   }
 
@@ -54,13 +70,32 @@ public final class DialogPhoneBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.cbEncrypt;
+      CheckBox cbEncrypt = ViewBindings.findChildViewById(rootView, id);
+      if (cbEncrypt == null) {
+        break missingId;
+      }
+
+      id = R.id.encryptPasswordLayout;
+      TextInputLayout encryptPasswordLayout = ViewBindings.findChildViewById(rootView, id);
+      if (encryptPasswordLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.etEncryptPassword;
+      TextInputEditText etEncryptPassword = ViewBindings.findChildViewById(rootView, id);
+      if (etEncryptPassword == null) {
+        break missingId;
+      }
+
       id = R.id.etPhone;
       TextInputEditText etPhone = ViewBindings.findChildViewById(rootView, id);
       if (etPhone == null) {
         break missingId;
       }
 
-      return new DialogPhoneBinding((LinearLayout) rootView, etPhone);
+      return new DialogPhoneBinding((LinearLayout) rootView, cbEncrypt, encryptPasswordLayout,
+          etEncryptPassword, etPhone);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

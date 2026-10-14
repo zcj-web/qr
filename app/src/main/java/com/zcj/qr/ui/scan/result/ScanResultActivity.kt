@@ -44,7 +44,6 @@ class ScanResultActivity : AppCompatActivity() {
                 binding.tvType.text = ProtocolHandler.getDisplayName(it)
                 binding.tvContent.text = ProtocolHandler.getContentPreview(it, viewModel.content.value ?: "")
                 updateActionButtonText(it)
-                binding.btnDecrypt.visibility = if (it is com.zcj.qr.util.ProtocolType.ENCRYPTED) View.VISIBLE else View.GONE
             }
         }
 
@@ -53,15 +52,16 @@ class ScanResultActivity : AppCompatActivity() {
             binding.tvContent.visibility = if (loading) View.GONE else View.VISIBLE
             binding.btnCopy.visibility = if (loading) View.GONE else View.VISIBLE
             binding.btnAction.visibility = if (loading) View.GONE else View.VISIBLE
-            binding.btnDecrypt.visibility = if (loading) View.GONE else (if (viewModel.protocolType.value is com.zcj.qr.util.ProtocolType.ENCRYPTED) View.VISIBLE else View.GONE)
         }
 
         viewModel.decryptedContent.observe(this) { decrypted ->
-            decrypted?.let {
-                binding.tvContent.text = it
-                Toast.makeText(this, "解密成功", Toast.LENGTH_SHORT).show()
-            } ?: run {
-                Toast.makeText(this, "解密失败，密码可能不正确", Toast.LENGTH_SHORT).show()
+            if (viewModel.decodeAttempted.value == true) {
+                if (decrypted != null) {
+                    binding.tvContent.text = decrypted
+                    Toast.makeText(this, "解密成功", Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(this, "解密失败，密码可能不正确", Toast.LENGTH_SHORT).show()
+                }
             }
         }
     }
@@ -77,14 +77,14 @@ class ScanResultActivity : AppCompatActivity() {
         binding.btnAction.setOnClickListener {
             val type = viewModel.protocolType.value
             type?.let {
-                val intent = ProtocolHandler.getActionIntent(it, viewModel.content.value ?: "")
-                intent?.let { i -> startActivity(i) }
-                    ?: run { Toast.makeText(this, "无法处理此内容", Toast.LENGTH_SHORT).show() }
+                if (it is com.zcj.qr.util.ProtocolType.ENCRYPTED) {
+                    showPasswordDialog()
+                } else {
+                    val intent = ProtocolHandler.getActionIntent(it, viewModel.content.value ?: "")
+                    intent?.let { i -> startActivity(i) }
+                        ?: run { Toast.makeText(this, "无法处理此内容", Toast.LENGTH_SHORT).show() }
+                }
             }
-        }
-
-        binding.btnDecrypt.setOnClickListener {
-            showPasswordDialog()
         }
 
         binding.tvContent.setOnLongClickListener {

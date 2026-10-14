@@ -2,14 +2,14 @@ package com.zcj.qr.ui.scan.camera
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.MutableLiveData
+import com.zcj.qr.data.QrDatabase
 import com.zcj.qr.data.repository.HistoryRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class CameraScanViewModel(
-    private val repository: HistoryRepository
-) : ViewModel() {
+class CameraScanViewModel : ViewModel() {
+    private val repository = HistoryRepository(QrDatabase.getDatabase(com.zcj.qr.QrApp.context))
 
     val scannedResult = MutableLiveData<String?>()
 
