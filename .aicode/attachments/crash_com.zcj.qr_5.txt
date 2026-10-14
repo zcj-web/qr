@@ -1,3 +1,0 @@
-ANR in com.zcj.qr
-
-10-14 08:24:40.507  1000  2066 12302 I am_anr  : [0,11971,com.zcj.qr,552123974,Input dispatching timed out (b258b6d com.zcj.qr/com.zcj.qr.ui.scan.camera.CameraScanActivity (server) is not responding. Waited 5000ms for KeyEvent(action=DOWN))]
