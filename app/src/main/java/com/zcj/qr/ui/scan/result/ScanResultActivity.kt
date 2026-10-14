@@ -9,9 +9,9 @@ import android.view.View
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.zcj.qr.R
+import com.zcj.qr.BaseActivity
 import com.zcj.qr.crypto.Aes256GcmCrypto
 import com.zcj.qr.crypto.QrProtocolParser
 import com.zcj.qr.databinding.ActivityScanResultBinding
@@ -21,7 +21,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 
-class ScanResultActivity : AppCompatActivity() {
+class ScanResultActivity : BaseActivity() {
 
     private lateinit var binding: ActivityScanResultBinding
     private val viewModel: ScanResultViewModel by viewModels()

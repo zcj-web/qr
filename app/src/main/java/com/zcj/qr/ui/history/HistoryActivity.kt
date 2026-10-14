@@ -3,10 +3,10 @@ package com.zcj.qr.ui.history
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.zcj.qr.BaseActivity
 import com.zcj.qr.R
 import com.zcj.qr.data.QrDatabase
 import com.zcj.qr.data.repository.HistoryRepository
@@ -17,7 +17,7 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
-class HistoryActivity : AppCompatActivity() {
+class HistoryActivity : BaseActivity() {
 
     private lateinit var binding: ActivityHistoryBinding
     private lateinit var adapter: HistoryAdapter

@@ -1,11 +1,11 @@
 package com.zcj.qr.ui.scan.gallery
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.commit
+import com.zcj.qr.BaseActivity
 import com.zcj.qr.R
 
-class GalleryScanActivity : AppCompatActivity() {
+class GalleryScanActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

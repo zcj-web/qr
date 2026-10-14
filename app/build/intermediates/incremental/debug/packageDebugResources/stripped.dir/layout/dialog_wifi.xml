@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSsid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="WiFi 名称 (SSID)" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="密码"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radioWpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WPA/WPA2"
+            android:checked="true" />
+        <RadioButton
+            android:id="@+id/radioWep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEP" />
+        <RadioButton
+            android:id="@+id/radioNone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="无" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cbEncrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="加密内容" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:id="@+id/encryptPasswordLayout">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEncryptPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="解密密码"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

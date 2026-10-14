@@ -4,6 +4,7 @@ package com.zcj.qr.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -21,14 +22,19 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ImageButton btnThemeToggle;
+
+  @NonNull
   public final TabLayout tabLayout;
 
   @NonNull
   public final ViewPager2 viewPager2;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull TabLayout tabLayout,
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ImageButton btnThemeToggle, @NonNull TabLayout tabLayout,
       @NonNull ViewPager2 viewPager2) {
     this.rootView = rootView;
+    this.btnThemeToggle = btnThemeToggle;
     this.tabLayout = tabLayout;
     this.viewPager2 = viewPager2;
   }
@@ -60,6 +66,12 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnThemeToggle;
+      ImageButton btnThemeToggle = ViewBindings.findChildViewById(rootView, id);
+      if (btnThemeToggle == null) {
+        break missingId;
+      }
+
       id = R.id.tabLayout;
       TabLayout tabLayout = ViewBindings.findChildViewById(rootView, id);
       if (tabLayout == null) {
@@ -72,7 +84,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, tabLayout, viewPager2);
+      return new ActivityMainBinding((ConstraintLayout) rootView, btnThemeToggle, tabLayout,
+          viewPager2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

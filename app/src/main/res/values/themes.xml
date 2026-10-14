@@ -14,6 +14,12 @@
         <item name="android:navigationBarColor">@color/day_surface</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowLightNavigationBar">true</item>
+        <!-- Glass card theme attributes -->
+        <item name="glassCardBackground">@color/day_glass_bg</item>
+        <item name="glassCardStroke">@color/day_glass_border</item>
+        <item name="glassCardShadow">@color/day_glass_shadow</item>
+        <item name="glassCardShadowSecondary">#1A000000</item>
+        <item name="glassCardHighlight">#1AFFFFFF</item>
     </style>
 
     <!-- Night Theme -->
@@ -30,6 +36,12 @@
         <item name="android:navigationBarColor">@color/night_surface</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar">false</item>
+        <!-- Glass card theme attributes -->
+        <item name="glassCardBackground">@color/night_glass_bg</item>
+        <item name="glassCardStroke">@color/night_glass_border</item>
+        <item name="glassCardShadow">@color/night_glass_shadow</item>
+        <item name="glassCardShadowSecondary">#33F8FAFC</item>
+        <item name="glassCardHighlight">#0D000000</item>
     </style>
 
     <!-- ZXing Capture Theme -->

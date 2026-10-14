@@ -82,7 +82,8 @@
             "Bash(ps)",
             "Bash(md5sum)",
             "Bash(aapt2)",
-            "Bash(hexdump)"
+            "Bash(hexdump)",
+            "Bash(kotlin)"
         ],
         "deny": []
     }

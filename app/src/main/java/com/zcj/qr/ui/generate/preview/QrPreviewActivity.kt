@@ -5,9 +5,9 @@ import android.graphics.Bitmap
 import android.os.Bundle
 import android.provider.MediaStore
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
 import androidx.lifecycle.lifecycleScope
+import com.zcj.qr.BaseActivity
 import com.zcj.qr.R
 import com.zcj.qr.databinding.ActivityQrPreviewBinding
 import com.zcj.qr.util.DotShape
@@ -18,7 +18,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.FileOutputStream
 
-class QrPreviewActivity : AppCompatActivity() {
+class QrPreviewActivity : BaseActivity() {
 
     private lateinit var binding: ActivityQrPreviewBinding
     // 缓存当前安全样式（低对比度时自动调整为黑白）

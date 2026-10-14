@@ -1,7 +1,12 @@
 R_DEF: Internal format may change without notice
 local
 array iteration_options
-attr glassAlpha
+attr? glassAlpha
+attr? glassCardBackground
+attr? glassCardHighlight
+attr? glassCardShadow
+attr? glassCardShadowSecondary
+attr? glassCardStroke
 bool use_dark_mode
 color day_glass_bg
 color day_glass_border
@@ -27,8 +32,11 @@ drawable glass_button_day
 drawable glass_button_night
 drawable glass_button_pressed
 drawable glass_button_selector_day
+drawable glass_button_selector_theme
+drawable glass_button_theme
 drawable glass_card_day
 drawable glass_card_night
+drawable glass_card_theme
 drawable ic_app
 drawable ic_back
 drawable ic_camera
@@ -39,9 +47,12 @@ drawable ic_email
 drawable ic_flash_off
 drawable ic_flash_on
 drawable ic_gallery
+drawable ic_moon
 drawable ic_phone
 drawable ic_quick_create
 drawable ic_sms
+drawable ic_sun
+drawable ic_toggle_bg
 drawable ic_url
 drawable ic_wifi
 id action_customGenerateFragment_to_preview
@@ -70,6 +81,7 @@ id btnQuickCreate
 id btnRemoveLogo
 id btnSave
 id btnShare
+id btnThemeToggle
 id cameraScanFragment
 id cbEncrypt
 id container
@@ -183,6 +195,7 @@ style TabTextStyle
 style Theme.QrCode
 style Theme.QrCode.Night
 style zxing_CaptureTheme
+styleable GlassCard glassAlpha glassCardBackground glassCardStroke glassCardShadow glassCardShadowSecondary glassCardHighlight
 xml backup_rules
 xml data_extraction_rules
 xml file_paths

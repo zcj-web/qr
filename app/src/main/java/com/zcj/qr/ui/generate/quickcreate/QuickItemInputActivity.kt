@@ -7,8 +7,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.zcj.qr.BaseActivity
 import com.zcj.qr.R
 import com.zcj.qr.crypto.Aes256GcmCrypto
 import com.zcj.qr.data.QrDatabase
@@ -21,7 +21,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class QuickItemInputActivity : AppCompatActivity() {
+class QuickItemInputActivity : BaseActivity() {
 
     enum class QuickType(val label: String, val extraKey: String) {
         WIFI("WiFi 二维码", "wifi"),

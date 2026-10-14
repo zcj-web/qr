@@ -6,7 +6,7 @@ import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
+import com.zcj.qr.BaseActivity
 import com.zcj.qr.data.QrDatabase
 import com.zcj.qr.data.repository.HistoryRepository
 import com.zcj.qr.ui.scan.result.ScanResultActivity
@@ -15,7 +15,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class ShareScanActivity : AppCompatActivity() {
+class ShareScanActivity : BaseActivity() {
 
     private val repository by lazy { HistoryRepository(QrDatabase.getDatabase(applicationContext)) }
 

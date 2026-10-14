@@ -626,6 +626,11 @@ attr framePosition
 attr gapBetweenBars
 attr gestureInsetBottomIgnored
 attr glassAlpha
+attr glassCardBackground
+attr glassCardHighlight
+attr glassCardShadow
+attr glassCardShadowSecondary
+attr glassCardStroke
 attr goIcon
 attr graph
 attr guidelineUseRtl
@@ -3074,8 +3079,11 @@ drawable glass_button_day
 drawable glass_button_night
 drawable glass_button_pressed
 drawable glass_button_selector_day
+drawable glass_button_selector_theme
+drawable glass_button_theme
 drawable glass_card_day
 drawable glass_card_night
+drawable glass_card_theme
 drawable ic_app
 drawable ic_arrow_back_black_24
 drawable ic_back
@@ -3099,6 +3107,7 @@ drawable ic_keyboard_black_24dp
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
+drawable ic_moon
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -3107,6 +3116,8 @@ drawable ic_phone
 drawable ic_quick_create
 drawable ic_search_black_24
 drawable ic_sms
+drawable ic_sun
+drawable ic_toggle_bg
 drawable ic_url
 drawable ic_wifi
 drawable m3_avd_hide_password
@@ -3309,6 +3320,7 @@ id btnQuickCreate
 id btnRemoveLogo
 id btnSave
 id btnShare
+id btnThemeToggle
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -5402,6 +5414,7 @@ styleable ForegroundLinearLayout android_foreground android_foregroundGravity fo
 styleable Fragment android_name android_id android_tag
 styleable FragmentContainerView android_name android_tag
 styleable FragmentNavigator android_name
+styleable GlassCard glassAlpha glassCardBackground glassCardHighlight glassCardShadow glassCardShadowSecondary glassCardStroke
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
 styleable ImageFilterView altSrc blendSrc brightness contrast crossfade imagePanX imagePanY imageRotate imageZoom overlay round roundPercent saturation warmth

@@ -5,7 +5,6 @@
         <item>100,000 次 (推荐)</item>
         <item>500,000 次 (安全)</item>
     </string-array>
-    <attr format="float" name="glassAlpha"/>
     <bool name="use_dark_mode">true</bool>
     <color name="day_glass_bg">#CCFFFFFF</color>
     <color name="day_glass_border">#33000000</color>
@@ -46,6 +45,12 @@
         <item name="android:navigationBarColor">@color/day_surface</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowLightNavigationBar">true</item>
+        
+        <item name="glassCardBackground">@color/day_glass_bg</item>
+        <item name="glassCardStroke">@color/day_glass_border</item>
+        <item name="glassCardShadow">@color/day_glass_shadow</item>
+        <item name="glassCardShadowSecondary">#1A000000</item>
+        <item name="glassCardHighlight">#1AFFFFFF</item>
     </style>
     <style name="Theme.QrCode.Night" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/night_primary</item>
@@ -60,10 +65,24 @@
         <item name="android:navigationBarColor">@color/night_surface</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar">false</item>
+        
+        <item name="glassCardBackground">@color/night_glass_bg</item>
+        <item name="glassCardStroke">@color/night_glass_border</item>
+        <item name="glassCardShadow">@color/night_glass_shadow</item>
+        <item name="glassCardShadowSecondary">#33F8FAFC</item>
+        <item name="glassCardHighlight">#0D000000</item>
     </style>
     <style name="zxing_CaptureTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:statusBarColor">#80000000</item>
     </style>
+    <declare-styleable name="GlassCard">
+        <attr format="float" name="glassAlpha"/>
+        <attr format="color" name="glassCardBackground"/>
+        <attr format="color" name="glassCardStroke"/>
+        <attr format="color" name="glassCardShadow"/>
+        <attr format="color" name="glassCardShadowSecondary"/>
+        <attr format="color" name="glassCardHighlight"/>
+    </declare-styleable>
 </resources>

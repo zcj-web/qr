@@ -7,9 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.zcj.qr.BaseActivity
 import com.zcj.qr.R
 import com.zcj.qr.databinding.ActivityQuickCreateBinding
 import com.zcj.qr.util.DotShape
@@ -21,7 +21,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
-class QuickCreateActivity : AppCompatActivity() {
+class QuickCreateActivity : BaseActivity() {
 
     private lateinit var binding: ActivityQuickCreateBinding
 
